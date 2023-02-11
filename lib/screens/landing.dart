@@ -2,13 +2,10 @@
 
 import 'dart:html';
 
+import 'package:demo/screens/content.dart';
 import 'package:demo/utils/images.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:window_style_dropdown_menu/window_style_dropdown_menu.dart';
+import 'package:flutter/rendering.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -18,288 +15,297 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
-  // _showPopupMenu() async {
-  //   // double left = offset.dx;
-  //   // double top = offset.dy;
-  //   await showMenu(
-  //     context: context,
-  //     position: RelativeRect.fill,
-  //     // position: RelativeRect.fromLTRB(left, top, 0, 0),
-  //     items: <PopupMenuEntry<int>>[
-  //       PopupMenuItem(child: Text('0'), value: 0),
-  //       PopupMenuItem(child: Text('1'), value: 1),
-  //     ],
-  //     elevation: 8.0,
-  //   );
-  // }
+  final ScrollController scrollControll = ScrollController();
+  bool ShowWidget = true;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
-    final _key = GlobalKey<ScaffoldState>();
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      key: _key,
-      body: SingleChildScrollView(
-        child: Container(
-          // color: Colors.red,
+      appBar: null,
+      body: NotificationListener<ScrollUpdateNotification>(
+        onNotification: (ScrollNotification scrollInfo) {
+          if (scrollControll.position.userScrollDirection ==
+              ScrollDirection.reverse) {
+            print('User is going down');
+            setState(() {
+              ShowWidget = false;
+            });
+          } else {
+            if (scrollControll.position.userScrollDirection ==
+                ScrollDirection.forward) {
+              print('User is going up');
+              setState(() {
+                ShowWidget = true;
+              });
+            }
+          }
+          return true;
+        },
+        child: SizedBox(
           width: width,
           height: height,
-          child: Column(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.only(
-                        bottomRight: Radius.circular(180)),
-                    image: DecorationImage(
-                        image: AssetImage(banner), fit: BoxFit.cover)),
-                width: width,
-                height: height * 0.6,
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+          child: NestedScrollView(
+            controller: scrollControll,
+            headerSliverBuilder: (BuildContext context, bool boxIsScrolled) {
+              return <Widget>[];
+            },
+            body: ListView(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(banner), fit: BoxFit.cover)),
+                  width: width,
+                  height: height / 1.4,
+                  child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 20),
-                        child: Align(
-                          alignment: Alignment.topRight,
-                          child: ElevatedButton(
-                              onPressed: () {
-                                print("object");
-                              },
-                              style: ElevatedButton.styleFrom(
-                                fixedSize: (const Size(
-                                  137,
-                                  29,
-                                )),
-                                side: const BorderSide(width: 0.5),
-                                backgroundColor: const Color(0xfff2e000),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15)),
-                              ),
-                              child: const Text(
-                                "GET SUPPORT",
-                                style: TextStyle(
-                                    fontSize: 13,
-                                    letterSpacing: 1,
-                                    decoration: TextDecoration.none,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w300),
-                              )),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 20,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Image.asset(
-                              logo,
-                              fit: BoxFit.contain,
-                              width: 200,
-                              height: 80,
-                            ),
+                            ShowWidget == false
+                                ? Container()
+                                : Image.asset(
+                                    logo,
+                                    width: width * 0.1,
+                                    fit: BoxFit.contain,
+                                  ),
                             SizedBox(
-                              child: Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      WindowStyleDropdownMenu(
-                                          buttonTitle: "IT SOLUTIONS",
-                                          dropdownBackgroundColor: Colors.white,
-                                          dropdownItems: const [
-                                            ListTile(
-                                              title: Text("CYBER SECURITY",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text("DATA CENTER",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text("COLLABORATION",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text("ENTERPRISE NETWORKS",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text("CLOUD MIGRATION",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text(
-                                                  "BACKUP AND DISASTER RECOVERY",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                          ]),
-                                      const Icon(Icons.keyboard_arrow_down)
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      WindowStyleDropdownMenu(
-                                          buttonTitle: "IT SERVICES",
-                                          dropdownBackgroundColor: Colors.white,
-                                          dropdownItems: const [
-                                            ListTile(
-                                              title: Text(
-                                                "MANAGED IT SERVICES",
+                              width: width * 0.39,
+                              height: height * 0.2,
+                              child: FittedBox(
+                                fit: BoxFit.fitWidth,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 5),
+                                          child: TextButton(
+                                              onPressed: () {},
+                                              child: const Text(
+                                                "Login",
                                                 style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                            ListTile(
-                                              title: Text(
-                                                "PROFESSIONAL IT SERVICES",
+                                                  color: Colors.white,
+                                                ),
+                                              )),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 5),
+                                          child: TextButton(
+                                              onPressed: () {},
+                                              child: const Text(
+                                                "Create an account",
                                                 style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
+                                                  color: Colors.white,
+                                                ),
+                                              )),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 5),
+                                          child: DropdownButton(
+                                            items: const [],
+                                            onChanged: (value) {},
+                                            icon: const Icon(
+                                              Icons.arrow_drop_down_outlined,
+                                              size: 18,
+                                              color: Colors.black,
+                                            ),
+                                            hint: const Text(
+                                              "Tools",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  letterSpacing: 1.5,
+                                                  fontSize: 11.5,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            underline: Container(),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 5),
+                                          child: DropdownButton(
+                                            items: const [],
+                                            onChanged: (value) {},
+                                            icon: const Icon(
+                                              Icons.arrow_drop_down_outlined,
+                                              size: 18,
+                                              color: Colors.black,
+                                            ),
+                                            hint: const Text(
+                                              "Support",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  letterSpacing: 1.5,
+                                                  fontSize: 11.5,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            underline: Container(),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 5),
+                                          child: DropdownButton(
+                                            items: const [],
+                                            onChanged: (value) {},
+                                            icon: const Icon(
+                                              Icons.arrow_drop_down_outlined,
+                                              size: 18,
+                                              color: Colors.black,
+                                            ),
+                                            // ignore: prefer_const_constructors
+                                            hint: Icon(
+                                              Icons.location_searching,
+                                              size: 18,
+                                              color: Colors.white,
+                                            ),
+                                            underline: Container(),
+                                          ),
+                                        ),
+                                        Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                                horizontal: 10),
+                                            child: IconButton(
+                                                onPressed: () {},
+                                                icon: const Icon(
+                                                  Icons.shopping_cart,
+                                                  size: 18,
+                                                  color: Colors.white,
+                                                )))
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: SizedBox(
+                                        width: width * 0.15,
+                                        height: height * 0.05,
+                                        child: TextFormField(
+                                          style: const TextStyle(fontSize: 12),
+                                          decoration: const InputDecoration(
+                                              enabledBorder: OutlineInputBorder(
+                                                  borderRadius:
+                                                      BorderRadius.zero,
+                                                  borderSide:
+                                                      BorderSide(width: 1)),
+                                              border: OutlineInputBorder(),
+                                              contentPadding:
+                                                  EdgeInsets.symmetric(
+                                                horizontal: 10,
                                               ),
-                                            ),
-                                          ]),
-                                      const Icon(Icons.keyboard_arrow_down)
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      WindowStyleDropdownMenu(
-                                          buttonTitleStyle:
-                                              // ignore: prefer_const_constructors
-                                              TextStyle(color: Colors.white),
-                                          buttonTitle: "INDUSTRIES",
-                                          dropdownBackgroundColor: Colors.white,
-                                          dropdownItems: const [
-                                            ListTile(
-                                              title: Text(
-                                                "MANUFACTURING",
-                                                style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                            ListTile(
-                                              title: Text("HEALTH CARE",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text("EDUCATION",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                            ListTile(
-                                              title: Text(
-                                                  "PROFESSIONAL SERVICES",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.blue)),
-                                            ),
-                                          ]),
-                                      const Icon(Icons.keyboard_arrow_down)
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      WindowStyleDropdownMenu(
-                                          buttonTitle: "LEARNING CENTER",
-                                          dropdownBackgroundColor: Colors.white,
-                                          dropdownItems: const [
-                                            ListTile(
-                                              title: Text(
-                                                "THE ULTIMATE GUIDE TO MANAGED IT SERVICES",
-                                                style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                          ]),
-                                      const Icon(Icons.keyboard_arrow_down)
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      WindowStyleDropdownMenu(
-                                          buttonTitle: "COMPANY",
-                                          dropdownBackgroundColor: Colors.white,
-                                          dropdownItems: const [
-                                            ListTile(
-                                              title: Text(
-                                                "MEET OUR LEADERS",
-                                                style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                            ListTile(
-                                              title: Text(
-                                                "CAREERS",
-                                                style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                            ListTile(
-                                              title: Text(
-                                                "AWARDS",
-                                                style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                          ]),
-                                      const Icon(Icons.keyboard_arrow_down)
-                                    ],
-                                  ),
-                                  TextButton(
-                                      onPressed: () {},
-                                      child: const Text("CONTACT",
-                                          style: TextStyle(
-                                              fontSize: 12,
-                                              color: Colors.white)))
-                                ],
+                                              fillColor: Colors.white,
+                                              filled: true,
+                                              hintText: "How Can I Help You ?",
+                                              hintStyle: TextStyle(
+                                                  fontSize: 10,
+                                                  fontWeight: FontWeight.w500),
+                                              suffixIcon: Icon(
+                                                Icons.search,
+                                                color: Colors.black,
+                                                size: 14,
+                                              )),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            )
+                          ]),
+                      SizedBox(
+                        width: width,
+                        height: height / 2,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text("IT consulting services",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 36,
+                                    letterSpacing: 1,
+                                    wordSpacing: 1,
+                                    fontFamily: ".SF UI Text",
+                                    fontWeight: FontWeight.w200)),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                                " Modernize your organization and increase efficiency, flexibility and security\n with our comprehensive cloud and data center services.",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    letterSpacing: 1.9,
+                                    height: 1.5,
+                                    wordSpacing: 2,
+                                    fontFamily: ".SF UI Text",
+                                    fontWeight: FontWeight.normal)),
+                            const SizedBox(
+                              height: 30,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                  fixedSize: Size(width * 0.2, height * 0.09)),
+                              child: const Text(
+                                "HEAR FROM OUR TEAM",
+                                style: TextStyle(fontWeight: FontWeight.w600),
                               ),
                             )
                           ],
                         ),
                       ),
-                      const Padding(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            "Professional IT Services",
-                            style: TextStyle(
-                                fontSize: 62,
-                                color: Colors.white,
-                                // fontFamily: "Times New Roman",
-                                fontWeight: FontWeight.bold),
-                          ),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: width * 0.26,
+                          child: RequiredTexts.getOnPath,
                         ),
-                      )
-                    ]),
-              ),
-              const SizedBox()
-            ],
+                        SizedBox(
+                          width: width * 0.26,
+                          child: RequiredTexts.intheAge,
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        SizedBox(
+                          width: width * 0.26,
+                          child: RequiredTexts.weHelpYou,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      child: Image.asset(pic1),
+                    )
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
