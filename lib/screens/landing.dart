@@ -275,35 +275,55 @@ class _LandingPageState extends State<LandingPage> {
                   height: 20,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         SizedBox(
-                          width: width * 0.26,
+                          width: width * 0.33,
                           child: RequiredTexts.getOnPath,
                         ),
                         SizedBox(
-                          width: width * 0.26,
+                          width: width * 0.33,
                           child: RequiredTexts.intheAge,
                         ),
                         const SizedBox(
                           height: 20,
                         ),
                         SizedBox(
-                          width: width * 0.26,
+                          width: width * 0.33,
                           child: RequiredTexts.weHelpYou,
                         ),
                       ],
                     ),
                     SizedBox(
-                      child: Image.asset(pic1),
+                      width: 400,
+                      // height: 300,
+                      child: Image.asset(
+                        pic1,
+                        fit: BoxFit.cover,
+                      ),
                     )
                   ],
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  width: width,
+                  height: height * 0.5,
+                  color: const Color.fromARGB(255, 212, 210, 210),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      RequiredTexts.optimize,
+                      SizedBox(width: width / 2, child: RequiredTexts.ourCloud),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
