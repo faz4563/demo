@@ -9,6 +9,13 @@ class ContactForm extends StatefulWidget {
   State<ContactForm> createState() => ContactFormState();
 }
 
+TextEditingController firstNameController = TextEditingController();
+TextEditingController lastNameController = TextEditingController();
+TextEditingController emailController = TextEditingController();
+TextEditingController compNameController = TextEditingController();
+TextEditingController itServiceRequiredController = TextEditingController();
+TextEditingController requirementsController = TextEditingController();
+
 class ContactFormState extends State<ContactForm> {
   @override
   Widget build(BuildContext context) {
@@ -30,15 +37,36 @@ class ContactFormState extends State<ContactForm> {
               shape: BoxShape.rectangle,
               color: Colors.white,
             ),
-            child: Column(
-              children: [
-                SizedBox(
-                  width: width * 0.2,
-                  child: Row(
-                    children: [TextFormField(), TextFormField()],
-                  ),
-                )
-              ],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: width * 2,
+                    height: height * 0.6,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: width * 0.2,
+                          height: height * 0.2,
+                          child: TextFormField(
+                            controller: firstNameController,
+                          ),
+                        ),
+                        const Spacer(),
+                        SizedBox(
+                          width: width * 0.2,
+                          height: height * 0.2,
+                          child: TextFormField(
+                            controller: lastNameController,
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ),
