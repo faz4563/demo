@@ -37,4 +37,53 @@ Get on a path to\ntransformation.
         fontSize: 14,
         fontWeight: FontWeight.w400),
   );
+  static Text partner = const Text(
+    '''A partner you can trust''',
+    style: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.normal,
+      letterSpacing: 1,
+      wordSpacing: 1,
+      height: 1.5,
+    ),
+  );
+  static Text ourteam = const Text(
+    '''
+Our team of technicians, engineers and visionaries has guided organizations as they advance their technology, reduce cost and promote innovation through a proven methodology that produces positive, consistent results.
+We understand the business landscape, technology platforms and essential workloads you need to consider. With a prescriptive approach, we help you define and implement new processes for optimal operational efficiency.''',
+    textAlign: TextAlign.start,
+    style: TextStyle(
+        letterSpacing: 1,
+        wordSpacing: 1,
+        height: 1.5,
+        fontSize: 14,
+        fontWeight: FontWeight.w400),
+  );
+  static Text gainTrue = const Text(
+    '''Gain true understanding.''',
+    style: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.normal,
+      letterSpacing: 1,
+      wordSpacing: 1,
+      height: 1.5,
+    ),
+  );
+  static Text isYourTech = const Text(
+    '''
+Is your technology supporting your organization or standing in the way of growth? A complete assessment gives you an end-to-end view of your infrastructure, storage and networks. Our workshops include security strategy, workload education and infrastructure strategy.
+We’ll help you:
+Determine current and potential risks.
+Align technology to business priorities.
+Provide detailed reporting and metrics.
+Identify bottlenecks for better performance.
+''',
+    textAlign: TextAlign.start,
+    style: TextStyle(
+        letterSpacing: 1,
+        wordSpacing: 1,
+        height: 1.5,
+        fontSize: 14,
+        fontWeight: FontWeight.w400),
+  );
 }
