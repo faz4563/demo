@@ -190,7 +190,7 @@ Our team of technicians, engineers and visionaries has guided organizations as t
     '''Gain true understanding.''',
     style: TextStyle(
       fontSize: 22,
-      fontWeight: FontWeight.normal,
+      fontWeight: FontWeight.w800,
       letterSpacing: 1,
       wordSpacing: 1,
       height: 1.5,
@@ -199,12 +199,7 @@ Our team of technicians, engineers and visionaries has guided organizations as t
   static Text isYourTech = const Text(
     '''
 Is your technology supporting your organization or standing in the way of growth? A complete assessment gives you an end-to-end view of your infrastructure, storage and networks. Our workshops include security strategy, workload education and infrastructure strategy.
-We’ll help you:
-Determine current and potential risks.
-Align technology to business priorities.
-Provide detailed reporting and metrics.
-Identify bottlenecks for better performance.
-''',
+We’ll help you''',
     textAlign: TextAlign.start,
     style: TextStyle(
         letterSpacing: 1,

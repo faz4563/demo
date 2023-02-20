@@ -723,6 +723,14 @@ class _LandingPageState extends State<LandingPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        SizedBox(
+                          width: 400,
+                          // height: 300,
+                          child: Image.asset(
+                            pic3,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -735,19 +743,11 @@ class _LandingPageState extends State<LandingPage> {
                               height: 20,
                             ),
                             SizedBox(
-                              width: width * 0.33,
+                              width: width * 0.5,
                               child: RequiredTexts.isYourTech,
                             ),
                           ],
                         ),
-                        SizedBox(
-                          width: 400,
-                          // height: 300,
-                          child: Image.asset(
-                            pic3,
-                            fit: BoxFit.cover,
-                          ),
-                        )
                       ],
                     ),
                   ],
