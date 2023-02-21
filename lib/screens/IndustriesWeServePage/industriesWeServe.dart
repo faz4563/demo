@@ -4,8 +4,6 @@ import 'package:demo/screens/landing%20page/landing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
-import '../content.dart';
 import 'IndustriesContent.dart';
 
 class IndustriesWeServe extends StatelessWidget {

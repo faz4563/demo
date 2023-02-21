@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../content.dart';
 import '../landing page/landing.dart';
 import 'whoweAreContent.dart';
 
