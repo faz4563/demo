@@ -3,12 +3,14 @@ import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:demo/screens/contactForm.dart';
 import 'package:demo/screens/content.dart';
-import 'package:demo/screens/INDUSTRIES%20WE%20SERVE/industriesWeServe.dart';
-import 'package:demo/screens/whoweArePage.dart/whoWeAre.dart';
+import 'package:demo/screens/IndustriesWeServePage/industriesWeServe.dart';
+import 'package:demo/screens/whoweArePage/whoWeArePage.dart';
 import 'package:demo/utils/images.dart';
 import 'package:demo/utils/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:window_style_dropdown_menu/window_style_dropdown_menu.dart';
+
+import 'LandingContent.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -98,12 +100,12 @@ class _LandingPageState extends State<LandingPage> {
                                       ),
                                       TextButton(
                                           onPressed: () {
-                                            // Navigator.push(context,
-                                            //     MaterialPageRoute(
-                                            //   builder: (context) {
-                                            //     return WhoWeare();
-                                            //   },
-                                            // ));
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                              builder: (context) {
+                                                return WhoWeare();
+                                              },
+                                            ));
                                           },
                                           child: Text(
                                             "Who We Are",
@@ -209,7 +211,7 @@ class _LandingPageState extends State<LandingPage> {
                         width: width * 0.5,
                         height: height * 0.12,
                         child: TextListPage(
-                          texts: RequiredTexts.topicsList,
+                          texts: LandingPageContents.topicsList,
                           timeInterval: 5,
                           textStyle: TextStyle(
                             fontSize: 36,
@@ -223,7 +225,7 @@ class _LandingPageState extends State<LandingPage> {
                     SizedBox(
                         height: null,
                         width: 800,
-                        child: RequiredTexts.subTopic),
+                        child: LandingPageContents.subTopic),
                     const SizedBox(
                       height: 30,
                     ),
@@ -258,14 +260,14 @@ class _LandingPageState extends State<LandingPage> {
                     children: [
                       SizedBox(
                         width: width * 0.33,
-                        child: RequiredTexts.getOnPath,
+                        child: LandingPageContents.getOnPath,
                       ),
                       const SizedBox(
                         height: 20,
                       ),
                       SizedBox(
                         width: width * 0.5,
-                        child: RequiredTexts.intheAge,
+                        child: LandingPageContents.intheAge,
                       ),
                       const SizedBox(
                         height: 20,
@@ -311,14 +313,14 @@ class _LandingPageState extends State<LandingPage> {
                       children: [
                         SizedBox(
                           width: width * 0.33,
-                          child: RequiredTexts.consolidation,
+                          child: LandingPageContents.consolidation,
                         ),
                         const SizedBox(
                           height: 20,
                         ),
                         SizedBox(
                           width: width * 0.5,
-                          child: RequiredTexts.reduce,
+                          child: LandingPageContents.reduce,
                         ),
                         const SizedBox(
                           height: 20,
@@ -341,14 +343,14 @@ class _LandingPageState extends State<LandingPage> {
                     children: [
                       SizedBox(
                         width: width * 0.33,
-                        child: RequiredTexts.itTransformation,
+                        child: LandingPageContents.itTransformation,
                       ),
                       const SizedBox(
                         height: 20,
                       ),
                       SizedBox(
                         width: width * 0.5,
-                        child: RequiredTexts.driveBusiness,
+                        child: LandingPageContents.driveBusiness,
                       ),
                       const SizedBox(
                         height: 20,
@@ -398,14 +400,14 @@ class _LandingPageState extends State<LandingPage> {
                       children: [
                         SizedBox(
                           width: width * 0.33,
-                          child: RequiredTexts.engineeringOnDemand,
+                          child: LandingPageContents.engineeringOnDemand,
                         ),
                         const SizedBox(
                           height: 20,
                         ),
                         SizedBox(
                           width: width * 0.5,
-                          child: RequiredTexts.ensure,
+                          child: LandingPageContents.ensure,
                         ),
                         const SizedBox(
                           height: 20,
@@ -435,13 +437,13 @@ class _LandingPageState extends State<LandingPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            RequiredTexts.partner,
+                            LandingPageContents.partner,
                             SizedBox(
                               height: 20,
                             ),
                             SizedBox(
                               width: width * 0.5,
-                              child: RequiredTexts.ourteamofTechnicians,
+                              child: LandingPageContents.ourteamofTechnicians,
                             ),
                           ],
                         ),
@@ -488,14 +490,14 @@ class _LandingPageState extends State<LandingPage> {
                           children: [
                             SizedBox(
                               width: width * 0.33,
-                              child: RequiredTexts.gainTrue,
+                              child: LandingPageContents.gainTrue,
                             ),
                             SizedBox(
                               height: 20,
                             ),
                             SizedBox(
                               width: width * 0.5,
-                              child: RequiredTexts.isYourTech,
+                              child: LandingPageContents.isYourTech,
                             ),
                           ],
                         ),
@@ -560,11 +562,11 @@ class AppBarWidget extends StatelessWidget {
                     ),
                     TextButton(
                         onPressed: () {
-                          // Navigator.push(context, MaterialPageRoute(
-                          //   builder: (context) {
-                          //     return WhoWeare();
-                          //   },
-                          // ));
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return WhoWeare();
+                            },
+                          ));
                         },
                         child: Text(
                           "Who We Are",

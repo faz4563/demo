@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../content.dart';
 import '../landing page/landing.dart';
+import 'whoweAreContent.dart';
 
 class WhoWeare extends StatefulWidget {
   const WhoWeare({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class _WhoWeareState extends State<WhoWeare> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Color(0xff071d56),
+      backgroundColor: const Color(0xff071d56),
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: AppBarWidget(
@@ -36,9 +37,9 @@ class _WhoWeareState extends State<WhoWeare> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.whoWeAre),
+                        child: WhoWeAreContents.whoWeAre),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -47,8 +48,8 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.basedIn,
-                              style: TextStyle(
+                              text: WhoWeAreContents.basedIn,
+                              style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
                                   wordSpacing: 1.5,
@@ -56,16 +57,16 @@ class _WhoWeareState extends State<WhoWeare> {
                                   fontWeight: FontWeight.normal)),
                         ])),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.ourCompany),
+                        child: WhoWeAreContents.ourCompany),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -74,8 +75,8 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.inFrench,
-                              style: TextStyle(
+                              text: WhoWeAreContents.inFrench,
+                              style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
                                   wordSpacing: 1.5,
@@ -83,16 +84,16 @@ class _WhoWeareState extends State<WhoWeare> {
                                   fontWeight: FontWeight.normal)),
                         ])),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.ourVision),
+                        child: WhoWeAreContents.ourVision),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -101,8 +102,8 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.toBuild,
-                              style: TextStyle(
+                              text: WhoWeAreContents.toBuild,
+                              style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
                                   wordSpacing: 1.5,
@@ -110,16 +111,16 @@ class _WhoWeareState extends State<WhoWeare> {
                                   fontWeight: FontWeight.normal)),
                         ])),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.ourMission),
+                        child: WhoWeAreContents.ourMission),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -128,8 +129,8 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.toDevelope,
-                              style: TextStyle(
+                              text: WhoWeAreContents.toDevelope,
+                              style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
                                   wordSpacing: 1.5,
@@ -137,16 +138,16 @@ class _WhoWeareState extends State<WhoWeare> {
                                   fontWeight: FontWeight.normal)),
                         ])),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.ourTeam),
+                        child: WhoWeAreContents.ourTeam),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -155,8 +156,8 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.fromExpert,
-                              style: TextStyle(
+                              text: WhoWeAreContents.fromExpert,
+                              style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
                                   wordSpacing: 1.5,
@@ -164,16 +165,16 @@ class _WhoWeareState extends State<WhoWeare> {
                                   fontWeight: FontWeight.normal)),
                         ])),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.whyUs),
+                        child: WhoWeAreContents.whyUs),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -182,8 +183,8 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.marketInteligence,
-                              style: TextStyle(
+                              text: WhoWeAreContents.marketInteligence,
+                              style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
                                   wordSpacing: 1.5,
