@@ -505,7 +505,94 @@ class _LandingPageState extends State<LandingPage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Container(
+               // color: const Color.fromARGB(255, 212, 210, 210),
+                width: width,
+                height: height * 0.5,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              width: width * 0.33,
+                              child: LandingPageContents.weHaveBeen,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            SizedBox(
+                              width: width * 0.5,
+                              child: LandingPageContents.leveragingYears,
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 400,
+                          // height: 300,
+                          child: Image.asset(
+                            pic3,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: const Color.fromARGB(255, 212, 210, 210),
+                width: width,
+                height: height * 0.5,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 400,
+                          // height: 300,
+                          child: Image.asset(
+                            pic3,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              width: width * 0.33,
+                              child: LandingPageContents.seeWhy,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            SizedBox(
+                              width: width * 0.5,
+                              child: LandingPageContents.iHaveOne,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ])),
         floatingActionButton: AnimatedOpacity(
           duration: Duration(milliseconds: 1000), //show/hide animation

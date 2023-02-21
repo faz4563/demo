@@ -209,4 +209,52 @@ We’ll help you''',
         fontSize: 14,
         fontWeight: FontWeight.w400),
   );
+
+  static Text weHaveBeen = const Text(
+    '''We Have Been Helping SMBs Embrace and Adopt IT modernization for More than Two Decades.''',
+    style: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w800,
+      letterSpacing: 1,
+      wordSpacing: 1,
+      height: 1.5,
+    ),
+  );
+
+  static Text leveragingYears = const Text(
+    '''
+Leveraging years of experience and harnessing the power of disruptive technologies, we have been helping SMBs modernize their IT infrastructure at affordable costs. Our team specializes in delivering flexible IT infrastructure solutions tailored to meet businesses' evolving needs. We analyze and understand your business objectives and collaborate with you to craft the best optimal solution. On top of that, we perform tests to ensure successful integration and offer round-the-clock support. 
+[Who We Are]
+''',
+    textAlign: TextAlign.start,
+    style: TextStyle(
+        letterSpacing: 1,
+        wordSpacing: 1,
+        height: 1.5,
+        fontSize: 14,
+        fontWeight: FontWeight.w400),
+  );
+
+  static Text seeWhy = const Text(
+    '''See Why SMB Owners Love Avancer''',
+    style: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w800,
+      letterSpacing: 1,
+      wordSpacing: 1,
+      height: 1.5,
+    ),
+  );
+
+  static Text iHaveOne = const Text(
+    '''
+I have one word for Avancer - Reliable. After we signed up for their services, their expert team got in touch with us and promptly collaborated to develop a strategic roadmap. Throughout the process, we were getting regular updates, and Avancer finished the infrastructure transformation before the deadline and within the budget. Excellent Job! Thank you.''',
+    textAlign: TextAlign.start,
+    style: TextStyle(
+        letterSpacing: 1,
+        wordSpacing: 1,
+        height: 1.5,
+        fontSize: 14,
+        fontWeight: FontWeight.w400),
+  );
 }
