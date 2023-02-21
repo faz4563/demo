@@ -322,11 +322,11 @@ We’ll help you''',
           fontWeight: FontWeight.w700));
 
   static String marketInteligence =
-'''Market Intelligence
-  Expert Team
-  Data-Driven Strategies
-  Guaranteed results
-  Disruptive technologies
-  Affordable
+'''  * Market Intelligence
+  * Expert Team
+  * Data-Driven Strategies
+  * Guaranteed results
+  * Disruptive technologies
+  * Affordable
   ''';
 }
