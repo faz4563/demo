@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import 'content.dart';
+
 class IndustriesWeServe extends StatelessWidget {
   const IndustriesWeServe({super.key});
 
@@ -19,41 +21,123 @@ class IndustriesWeServe extends StatelessWidget {
           child: AppBarWidget(
             showWidget: false,
           )),
-      body: SizedBox(
-        width: width,
-        height: height,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 40),
-                    child: Text("Industries We Serve\n",
-                        style: TextStyle(
-                            fontSize: 28,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w700)),
+      body: SingleChildScrollView(
+        child: SizedBox(
+          width: width,
+          height: height,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.industriesWeServe),
                   ),
-                ),
-                SizedBox(
-                  width: 1200,
-                  child: RichText(
-                      textAlign: TextAlign.left,
-                      text: const TextSpan(children: [
-                        TextSpan(
-                            text:
-                                "                           We are not just another IT solutions provider capitalizing on the big data boom. We have a cause. Our goal is to help SMBs unlock the potential of advanced IT technology and compete with larger corporations and organizations. Our knowledge of SMBs and multi-disciplinary expertise have enabled us to offer unparalleled IT Solutions to businesses from various industries. Currently, we serve more than six industries that play a crucial role in nation-building and the global market.",
-                            style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.white,
-                                fontWeight: FontWeight.normal)),
-                      ])),
-                ),
-              ]),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.weAreNotJust,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.oilIndustries),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.oilGasIndustry,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.healthCare),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.itSolutions,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.financial),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.weDevelop,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                ]),
+          ),
         ),
       ),
     );
