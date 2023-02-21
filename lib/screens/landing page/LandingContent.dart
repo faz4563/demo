@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -223,9 +225,7 @@ We’ll help you''',
 
   static Text leveragingYears = const Text(
     '''
-Leveraging years of experience and harnessing the power of disruptive technologies, we have been helping SMBs modernize their IT infrastructure at affordable costs. Our team specializes in delivering flexible IT infrastructure solutions tailored to meet businesses' evolving needs. We analyze and understand your business objectives and collaborate with you to craft the best optimal solution. On top of that, we perform tests to ensure successful integration and offer round-the-clock support. 
-[Who We Are]
-''',
+Leveraging years of experience and harnessing the power of disruptive technologies, we have been helping SMBs modernize their IT infrastructure at affordable costs. Our team specializes in delivering flexible IT infrastructure solutions tailored to meet businesses' evolving needs. We analyze and understand your business objectives and collaborate with you to craft the best optimal solution. On top of that, we perform tests to ensure successful integration and offer round-the-clock support.''',
     textAlign: TextAlign.start,
     style: TextStyle(
         letterSpacing: 1,
