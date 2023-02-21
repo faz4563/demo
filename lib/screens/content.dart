@@ -258,4 +258,23 @@ We’ll help you''',
 
   static String weDevelop =
       '''We develop integrated IT solutions for educational institutions, helping them improve student outcomes, reduce costs, and enhance overall effectiveness.''';
+  static Text retail = const Text("Retail Consulting Services : -",
+      style: TextStyle(
+          letterSpacing: 1,
+          fontSize: 18,
+          color: Colors.white,
+          fontWeight: FontWeight.w700));
+  static String companies =
+      '''Companies offering retail consulting services leverage our IT solutions to manage their operations, data, and customer interactions. Our solutions help retail consulting companies optimize their supply chain, improve customer service, and increase their overall profitability.''';
+
+  static Text transportation = const Text(
+      "Transportation, Logistics & Distribution : -",
+      style: TextStyle(
+          letterSpacing: 1,
+          fontSize: 18,
+          color: Colors.white,
+          fontWeight: FontWeight.w700));
+
+  static String ourTeam =
+      ''' Our team specializes in developing and implementing IT solutions that help companies manage large amounts of data and optimize their logistics networks. With our solutions, companies can improve their logistics efficiency, reduce costs, and increase customer satisfaction.''';
 }
