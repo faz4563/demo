@@ -1,8 +1,5 @@
 // ignore_for_file: implementation_imports, prefer_const_constructors, prefer_const_literals_to_create_immutables
-import 'package:animate_do/animate_do.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:demo/screens/contactForm.dart';
-import 'package:demo/screens/content.dart';
 import 'package:demo/screens/IndustriesWeServePage/industriesWeServe.dart';
 import 'package:demo/screens/whoweArePage/whoWeArePage.dart';
 import 'package:demo/utils/images.dart';
