@@ -23,12 +23,12 @@ class _WhoWeareState extends State<WhoWeare> {
           child: AppBarWidget(
             showWidget: false,
           )),
-      body: SingleChildScrollView(
-        child: SizedBox(
-          width: width,
-          height: height,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      body: SizedBox(
+        width: width,
+        height: height,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+          child: SingleChildScrollView(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,7 +37,7 @@ class _WhoWeareState extends State<WhoWeare> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.industriesWeServe),
+                        child: RequiredTexts.whoWeAre),
                   ),
                   SizedBox(
                     height: 10,
@@ -48,7 +48,7 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.weAreNotJust,
+                              text: RequiredTexts.basedIn,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -64,7 +64,7 @@ class _WhoWeareState extends State<WhoWeare> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.oilIndustries),
+                        child: RequiredTexts.ourCompany),
                   ),
                   SizedBox(
                     height: 10,
@@ -75,7 +75,7 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.oilGasIndustry,
+                              text: RequiredTexts.inFrench,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -91,7 +91,7 @@ class _WhoWeareState extends State<WhoWeare> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.healthCare),
+                        child: RequiredTexts.ourVision),
                   ),
                   SizedBox(
                     height: 10,
@@ -102,7 +102,7 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.itSolutions,
+                              text: RequiredTexts.toBuild,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -118,7 +118,7 @@ class _WhoWeareState extends State<WhoWeare> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.financial),
+                        child: RequiredTexts.ourMission),
                   ),
                   SizedBox(
                     height: 10,
@@ -129,7 +129,62 @@ class _WhoWeareState extends State<WhoWeare> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.weDevelop,
+                              text: RequiredTexts.toDevelope,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.ourTeam),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.fromExpert,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.whyUs),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.marketInteligence,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
