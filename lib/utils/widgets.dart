@@ -6,6 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:window_style_dropdown_menu/window_style_dropdown_menu.dart';
 
 import '../screens/IndustriesWeServePage/industriesWeServe.dart';
+import '../screens/landing page/landing.dart';
+import '../screens/whatwedo/consolidationPage.dart';
+import '../screens/whatwedo/engineeringOnPage.dart';
+import '../screens/whatwedo/itAssesmentPage.dart';
+import '../screens/whatwedo/itTransformationPage.dart';
 import '../screens/whoweArePage/whoWeArePage.dart';
 
 class TextListPage extends StatefulWidget {
@@ -51,13 +56,11 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return Container(
-      height: 100,
-      color: showWidget == true ? Colors.blue[900] : Colors.transparent,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
+        height: 100,
+        color: showWidget == true ? Colors.blue[900] : Colors.transparent,
+        child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
           SizedBox(
               width: width * 0.5,
               child: FittedBox(
@@ -73,7 +76,13 @@ class AppBarWidget extends StatelessWidget {
                       width: width * 0.01,
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(context, MaterialPageRoute(
+                            builder: (context) {
+                              return const LandingPage();
+                            },
+                          ));
+                        },
                         child: const Text(
                           "Home",
                           style: TextStyle(color: Colors.white),
@@ -83,9 +92,9 @@ class AppBarWidget extends StatelessWidget {
                     ),
                     TextButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(
+                          Navigator.pushReplacement(context, MaterialPageRoute(
                             builder: (context) {
-                              return WhoWeare();
+                              return const WhoWeare();
                             },
                           ));
                         },
@@ -104,8 +113,16 @@ class AppBarWidget extends StatelessWidget {
                               buttonTitle: "What We Do",
                               dropdownBackgroundColor: Colors.cyanAccent,
                               dropdownItems: [
-                                const ListTile(
-                                  title: Text(
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.pushReplacement(context,
+                                        MaterialPageRoute(
+                                      builder: (context) {
+                                        return const IT_Assesment();
+                                      },
+                                    ));
+                                  },
+                                  title: const Text(
                                     "IT Assessment & Upgrade Services",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -113,8 +130,16 @@ class AppBarWidget extends StatelessWidget {
                                         letterSpacing: 0.5),
                                   ),
                                 ),
-                                const ListTile(
-                                  title: Text(
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.pushReplacement(context,
+                                        MaterialPageRoute(
+                                      builder: (context) {
+                                        return const Consolidation();
+                                      },
+                                    ));
+                                  },
+                                  title: const Text(
                                     "Consolidation & Migration Services",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -122,8 +147,16 @@ class AppBarWidget extends StatelessWidget {
                                         letterSpacing: 0.5),
                                   ),
                                 ),
-                                const ListTile(
-                                  title: Text(
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.pushReplacement(context,
+                                        MaterialPageRoute(
+                                      builder: (context) {
+                                        return const IT_Transformation();
+                                      },
+                                    ));
+                                  },
+                                  title: const Text(
                                     "IT Transformation",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -131,8 +164,16 @@ class AppBarWidget extends StatelessWidget {
                                         letterSpacing: 0.5),
                                   ),
                                 ),
-                                const ListTile(
-                                  title: Text(
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.pushReplacement(context,
+                                        MaterialPageRoute(
+                                      builder: (context) {
+                                        return const EngineeringDemand();
+                                      },
+                                    ));
+                                  },
+                                  title: const Text(
                                     "Engineering on Demand",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -153,7 +194,7 @@ class AppBarWidget extends StatelessWidget {
                     ),
                     TextButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(
+                          Navigator.pushReplacement(context, MaterialPageRoute(
                             builder: (context) {
                               return const IndustriesWeServe();
                             },
@@ -173,8 +214,6 @@ class AppBarWidget extends StatelessWidget {
                           style: TextStyle(color: Colors.white),
                         )),
                   ])))
-        ],
-      ),
-    );
+        ]));
   }
 }

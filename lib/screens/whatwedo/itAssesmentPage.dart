@@ -1,5 +1,6 @@
 import 'package:demo/screens/whatwedo/itAssesmentContent.dart';
 import 'package:flutter/material.dart';
+import '../../utils/widgets.dart';
 import '../landing page/landing.dart';
 
 class IT_Assesment extends StatefulWidget {
@@ -14,7 +15,7 @@ class _WhatWeDoState extends State<IT_Assesment> {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: const Color(0xff071d56),
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
@@ -73,7 +74,7 @@ class _WhatWeDoState extends State<IT_Assesment> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text:WhatWeDoContent.ourIt,
+                              text: WhatWeDoContent.ourIt,
                               style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../utils/widgets.dart';
 import '../landing page/landing.dart';
 import 'itTransformationContent.dart';
 
@@ -15,7 +16,7 @@ class _IT_TransformationState extends State<IT_Transformation> {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: const Color(0xff071d56),
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
@@ -74,7 +75,7 @@ class _IT_TransformationState extends State<IT_Transformation> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text:IT_Transform.ourEffective,
+                              text: IT_Transform.ourEffective,
                               style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,

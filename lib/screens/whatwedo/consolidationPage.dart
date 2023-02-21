@@ -1,6 +1,7 @@
 import 'package:demo/screens/whatwedo/consolidationContent.dart';
 import 'package:flutter/material.dart';
 
+import '../../utils/widgets.dart';
 import '../landing page/landing.dart';
 import 'itAssesmentContent.dart';
 
@@ -16,9 +17,9 @@ class _ConsolidationState extends State<Consolidation> {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: const Color(0xff071d56),
-      appBar:  const PreferredSize(
+      appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: AppBarWidget(
             showWidget: false,
@@ -75,7 +76,7 @@ class _ConsolidationState extends State<Consolidation> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text:ConsolidationContent.throughOur,
+                              text: ConsolidationContent.throughOur,
                               style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -129,7 +130,8 @@ class _ConsolidationState extends State<Consolidation> {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: ConsolidationContent.partnerWith_consolidation,
+                              text: ConsolidationContent
+                                  .partnerWith_consolidation,
                               style: const TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -145,4 +147,3 @@ class _ConsolidationState extends State<Consolidation> {
     );
   }
 }
-

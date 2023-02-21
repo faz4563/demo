@@ -19,7 +19,7 @@ class _WhoWeareState extends State<WhoWeare> {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: const Color(0xff071d56),
-      appBar: const PreferredSize(
+      appBar: PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: AppBarWidget(
             showWidget: false,
