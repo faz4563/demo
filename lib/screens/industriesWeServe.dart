@@ -208,7 +208,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.ourTeam,
+                              text: RequiredTexts.ourteamSpecializes,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
