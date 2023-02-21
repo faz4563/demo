@@ -4,6 +4,10 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:demo/screens/contactForm.dart';
 import 'package:demo/screens/content.dart';
 import 'package:demo/screens/IndustriesWeServePage/industriesWeServe.dart';
+import 'package:demo/screens/whatwedo/consolidationPage.dart';
+import 'package:demo/screens/whatwedo/engineeringOnPage.dart';
+import 'package:demo/screens/whatwedo/itAssesmentPage.dart';
+import 'package:demo/screens/whatwedo/itTransformationPage.dart';
 import 'package:demo/screens/whoweArePage/whoWeArePage.dart';
 import 'package:demo/utils/images.dart';
 import 'package:demo/utils/widgets.dart';
@@ -125,6 +129,11 @@ class _LandingPageState extends State<LandingPage> {
                                                     Colors.cyanAccent,
                                                 dropdownItems: [
                                                   ListTile(
+                                                    onTap: () {
+                                                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                                        return IT_Assesment();
+                                                      },));
+                                                    },
                                                     title: Text(
                                                       "IT Assessment & Upgrade Services",
                                                       style: TextStyle(
@@ -135,6 +144,11 @@ class _LandingPageState extends State<LandingPage> {
                                                     ),
                                                   ),
                                                   ListTile(
+                                                    onTap: () {
+                                                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                                        return Consolidation();
+                                                      },));
+                                                    },
                                                     title: Text(
                                                       "Consolidation & Migration Services",
                                                       style: TextStyle(
@@ -145,6 +159,11 @@ class _LandingPageState extends State<LandingPage> {
                                                     ),
                                                   ),
                                                   ListTile(
+                                                    onTap: () {
+                                                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                                        return IT_Transformation();
+                                                      },));
+                                                    },
                                                     title: Text(
                                                       "IT Transformation",
                                                       style: TextStyle(
@@ -155,6 +174,11 @@ class _LandingPageState extends State<LandingPage> {
                                                     ),
                                                   ),
                                                   ListTile(
+                                                    onTap: () {
+                                                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                                        return EngineeringDemand();
+                                                      },));
+                                                    },
                                                     title: Text(
                                                       "Engineering on Demand",
                                                       style: TextStyle(
@@ -671,6 +695,11 @@ class AppBarWidget extends StatelessWidget {
                               dropdownBackgroundColor: Colors.cyanAccent,
                               dropdownItems: [
                                 ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                      return IT_Assesment();
+                                    },));
+                                  },
                                   title: Text(
                                     "IT Assessment & Upgrade Services",
                                     style: TextStyle(
@@ -680,6 +709,11 @@ class AppBarWidget extends StatelessWidget {
                                   ),
                                 ),
                                 ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                      return Consolidation();
+                                    },));
+                                  },
                                   title: Text(
                                     "Consolidation & Migration Services",
                                     style: TextStyle(
@@ -689,6 +723,11 @@ class AppBarWidget extends StatelessWidget {
                                   ),
                                 ),
                                 ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                      return IT_Transformation();
+                                    },));
+                                  },
                                   title: Text(
                                     "IT Transformation",
                                     style: TextStyle(
@@ -698,6 +737,11 @@ class AppBarWidget extends StatelessWidget {
                                   ),
                                 ),
                                 ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                      return EngineeringDemand();
+                                    },));
+                                  },
                                   title: Text(
                                     "Engineering on Demand",
                                     style: TextStyle(
