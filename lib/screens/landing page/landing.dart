@@ -3,8 +3,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:demo/screens/contactForm.dart';
 import 'package:demo/screens/content.dart';
-import 'package:demo/screens/industriesWeServe.dart';
-import 'package:demo/screens/whoWeAre.dart';
+import 'package:demo/screens/INDUSTRIES%20WE%20SERVE/industriesWeServe.dart';
+import 'package:demo/screens/whoweArePage.dart/whoWeAre.dart';
 import 'package:demo/utils/images.dart';
 import 'package:demo/utils/widgets.dart';
 import 'package:flutter/material.dart';
@@ -98,12 +98,12 @@ class _LandingPageState extends State<LandingPage> {
                                       ),
                                       TextButton(
                                           onPressed: () {
-                                            Navigator.push(context,
-                                                MaterialPageRoute(
-                                              builder: (context) {
-                                                return WhoWeare();
-                                              },
-                                            ));
+                                            // Navigator.push(context,
+                                            //     MaterialPageRoute(
+                                            //   builder: (context) {
+                                            //     return WhoWeare();
+                                            //   },
+                                            // ));
                                           },
                                           child: Text(
                                             "Who We Are",
@@ -559,7 +559,13 @@ class AppBarWidget extends StatelessWidget {
                       width: width * 0.01,
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          // Navigator.push(context, MaterialPageRoute(
+                          //   builder: (context) {
+                          //     return WhoWeare();
+                          //   },
+                          // ));
+                        },
                         child: Text(
                           "Who We Are",
                           style: TextStyle(color: Colors.white),
@@ -623,7 +629,13 @@ class AppBarWidget extends StatelessWidget {
                       width: width * 0.01,
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return IndustriesWeServe();
+                            },
+                          ));
+                        },
                         child: Text(
                           "Industries We Serve",
                           style: TextStyle(color: Colors.white),

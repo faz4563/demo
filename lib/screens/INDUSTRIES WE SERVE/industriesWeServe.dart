@@ -1,11 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:demo/screens/landing.dart';
+import 'package:demo/screens/landing%20page/landing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import 'content.dart';
+import '../content.dart';
+import 'IndustriesContent.dart';
 
 class IndustriesWeServe extends StatelessWidget {
   const IndustriesWeServe({super.key});
@@ -35,7 +36,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.industriesWeServe),
+                        child: IndustriesContent.industriesWeServe),
                   ),
                   SizedBox(
                     height: 10,
@@ -46,7 +47,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.weAreNotJust,
+                              text: IndustriesContent.weAreNotJust,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -62,7 +63,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.oilIndustries),
+                        child: IndustriesContent.oilIndustries),
                   ),
                   SizedBox(
                     height: 10,
@@ -73,7 +74,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.oilGasIndustry,
+                              text: IndustriesContent.oilGasIndustry,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -89,7 +90,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.healthCare),
+                        child: IndustriesContent.healthCare),
                   ),
                   SizedBox(
                     height: 10,
@@ -100,7 +101,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.itSolutions,
+                              text: IndustriesContent.itSolutions,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -116,7 +117,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.financial),
+                        child: IndustriesContent.financial),
                   ),
                   SizedBox(
                     height: 10,
@@ -127,7 +128,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.weOfferFinancial,
+                              text: IndustriesContent.weOfferFinancial,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -143,7 +144,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.education),
+                        child: IndustriesContent.education),
                   ),
                   SizedBox(
                     height: 10,
@@ -154,7 +155,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.weDevelop,
+                              text: IndustriesContent.weDevelop,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -170,7 +171,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.retail),
+                        child: IndustriesContent.retail),
                   ),
                   SizedBox(
                     height: 10,
@@ -181,7 +182,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.companies,
+                              text: IndustriesContent.companies,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,
@@ -197,7 +198,7 @@ class IndustriesWeServe extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                         padding: const EdgeInsets.only(left: 40),
-                        child: RequiredTexts.transportation),
+                        child: IndustriesContent.transportation),
                   ),
                   SizedBox(
                     height: 10,
@@ -208,7 +209,7 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
-                              text: RequiredTexts.ourteamSpecializes,
+                              text: IndustriesContent.ourteamSpecializes,
                               style: TextStyle(
                                   fontSize: 16,
                                   height: 1.6,

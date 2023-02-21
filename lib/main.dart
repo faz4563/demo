@@ -1,4 +1,4 @@
-import 'package:demo/screens/landing.dart';
+import 'package:demo/screens/landing%20page/landing.dart';
 import 'package:flutter/material.dart';
 
 void main() {

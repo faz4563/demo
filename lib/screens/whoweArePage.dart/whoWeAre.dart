@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'content.dart';
-import 'landing.dart';
+import '../content.dart';
+import '../landing page/landing.dart';
 
 class WhoWeare extends StatefulWidget {
   const WhoWeare({Key? key}) : super(key: key);
@@ -11,7 +11,6 @@ class WhoWeare extends StatefulWidget {
 }
 
 class _WhoWeareState extends State<WhoWeare> {
-
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
@@ -168,7 +167,6 @@ class _WhoWeareState extends State<WhoWeare> {
                   SizedBox(
                     height: 20,
                   ),
-
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
