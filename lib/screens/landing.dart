@@ -98,9 +98,12 @@ class _LandingPageState extends State<LandingPage> {
                                       ),
                                       TextButton(
                                           onPressed: () {
-                                            Navigator.push(context, MaterialPageRoute(builder: (context) {
-                                             return WhoWeare();
-                                            },));
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                              builder: (context) {
+                                                return WhoWeare();
+                                              },
+                                            ));
                                           },
                                           child: Text(
                                             "Who We Are",
@@ -438,7 +441,7 @@ class _LandingPageState extends State<LandingPage> {
                             ),
                             SizedBox(
                               width: width * 0.5,
-                              child: RequiredTexts.ourteam,
+                              child: RequiredTexts.ourteamofTechnicians,
                             ),
                           ],
                         ),

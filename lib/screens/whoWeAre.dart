@@ -168,7 +168,7 @@ class _WhoWeareState extends State<WhoWeare> {
                   SizedBox(
                     height: 20,
                   ),
-                  
+
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(

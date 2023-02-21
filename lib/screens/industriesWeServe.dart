@@ -21,12 +21,12 @@ class IndustriesWeServe extends StatelessWidget {
           child: AppBarWidget(
             showWidget: false,
           )),
-      body: SingleChildScrollView(
-        child: SizedBox(
-          width: width,
-          height: height,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      body: SizedBox(
+        width: width,
+        height: height,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+          child: SingleChildScrollView(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -127,6 +127,33 @@ class IndustriesWeServe extends StatelessWidget {
                         textAlign: TextAlign.left,
                         text: TextSpan(children: [
                           TextSpan(
+                              text: RequiredTexts.weOfferFinancial,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.education),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
                               text: RequiredTexts.weDevelop,
                               style: TextStyle(
                                   fontSize: 16,
@@ -135,6 +162,63 @@ class IndustriesWeServe extends StatelessWidget {
                                   color: Colors.white,
                                   fontWeight: FontWeight.normal)),
                         ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.retail),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.companies,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: RequiredTexts.transportation),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    width: 1100,
+                    child: RichText(
+                        textAlign: TextAlign.left,
+                        text: TextSpan(children: [
+                          TextSpan(
+                              text: RequiredTexts.ourteamSpecializes,
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  height: 1.6,
+                                  wordSpacing: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal)),
+                        ])),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ]),
           ),
