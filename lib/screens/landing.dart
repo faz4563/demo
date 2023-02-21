@@ -4,6 +4,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:demo/screens/contactForm.dart';
 import 'package:demo/screens/content.dart';
 import 'package:demo/screens/industriesWeServe.dart';
+import 'package:demo/screens/whoWeAre.dart';
 import 'package:demo/utils/images.dart';
 import 'package:demo/utils/widgets.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +97,14 @@ class _LandingPageState extends State<LandingPage> {
                                         width: width * 0.01,
                                       ),
                                       TextButton(
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                              builder: (context) {
+                                                return WhoWeare();
+                                              },
+                                            ));
+                                          },
                                           child: Text(
                                             "Who We Are",
                                             style:
@@ -433,7 +441,7 @@ class _LandingPageState extends State<LandingPage> {
                             ),
                             SizedBox(
                               width: width * 0.5,
-                              child: RequiredTexts.ourteam,
+                              child: RequiredTexts.ourteamofTechnicians,
                             ),
                           ],
                         ),
