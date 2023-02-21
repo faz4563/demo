@@ -1,6 +1,10 @@
 // ignore_for_file: implementation_imports, prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 import 'package:demo/screens/contactForm.dart';
 import 'package:demo/screens/IndustriesWeServePage/industriesWeServe.dart';
+import 'package:demo/screens/whatwedo/consolidationPage.dart';
+import 'package:demo/screens/whatwedo/engineeringOnPage.dart';
+import 'package:demo/screens/whatwedo/itAssesmentPage.dart';
+import 'package:demo/screens/whatwedo/itTransformationPage.dart';
 import 'package:demo/screens/whoweArePage/whoWeArePage.dart';
 import 'package:demo/utils/images.dart';
 import 'package:demo/utils/widgets.dart';
@@ -123,6 +127,14 @@ class _LandingPageState extends State<LandingPage> {
                                                       Colors.cyanAccent,
                                                   dropdownItems: [
                                                     ListTile(
+                                                      onTap: () {
+                                                        Navigator.push(context,
+                                                            MaterialPageRoute(
+                                                          builder: (context) {
+                                                            return IT_Assesment();
+                                                          },
+                                                        ));
+                                                      },
                                                       title: Text(
                                                         "IT Assessment & Upgrade Services",
                                                         style: TextStyle(
@@ -133,6 +145,14 @@ class _LandingPageState extends State<LandingPage> {
                                                       ),
                                                     ),
                                                     ListTile(
+                                                      onTap: () {
+                                                        Navigator.push(context,
+                                                            MaterialPageRoute(
+                                                          builder: (context) {
+                                                            return Consolidation();
+                                                          },
+                                                        ));
+                                                      },
                                                       title: Text(
                                                         "Consolidation & Migration Services",
                                                         style: TextStyle(
@@ -143,6 +163,14 @@ class _LandingPageState extends State<LandingPage> {
                                                       ),
                                                     ),
                                                     ListTile(
+                                                      onTap: () {
+                                                        Navigator.push(context,
+                                                            MaterialPageRoute(
+                                                          builder: (context) {
+                                                            return IT_Transformation();
+                                                          },
+                                                        ));
+                                                      },
                                                       title: Text(
                                                         "IT Transformation",
                                                         style: TextStyle(
@@ -153,6 +181,14 @@ class _LandingPageState extends State<LandingPage> {
                                                       ),
                                                     ),
                                                     ListTile(
+                                                      onTap: () {
+                                                        Navigator.push(context,
+                                                            MaterialPageRoute(
+                                                          builder: (context) {
+                                                            return EngineeringDemand();
+                                                          },
+                                                        ));
+                                                      },
                                                       title: Text(
                                                         "Engineering on Demand",
                                                         style: TextStyle(
@@ -161,7 +197,7 @@ class _LandingPageState extends State<LandingPage> {
                                                                 FontWeight.w500,
                                                             letterSpacing: 0.5),
                                                       ),
-                                                    ),
+                                                    )
                                                   ]),
                                             ),
                                             FittedBox(
@@ -631,5 +667,167 @@ class _LandingPageState extends State<LandingPage> {
               },
               child: Icon(Icons.arrow_upward)),
         ));
+  }
+}
+
+class AppBarWidget extends StatelessWidget {
+  const AppBarWidget({super.key, required this.showWidget});
+  final bool showWidget;
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+    return Container(
+      height: 100,
+      color: showWidget == true ? Colors.blue[900] : Colors.transparent,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          SizedBox(
+              width: width * 0.5,
+              child: FittedBox(
+                  fit: BoxFit.contain,
+                  child: Row(children: [
+                    TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Professional Services",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                    SizedBox(
+                      width: width * 0.01,
+                    ),
+                    TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Home",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                    SizedBox(
+                      width: width * 0.01,
+                    ),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return WhoWeare();
+                            },
+                          ));
+                        },
+                        child: Text(
+                          "Who We Are",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                    SizedBox(
+                      width: width * 0.01,
+                    ),
+                    SizedBox(
+                      width: width * 0.095,
+                      child: Row(
+                        children: [
+                          WindowStyleDropdownMenu(
+                              buttonTitle: "What We Do",
+                              dropdownBackgroundColor: Colors.cyanAccent,
+                              dropdownItems: [
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return IT_Assesment();
+                                      },
+                                    ));
+                                  },
+                                  title: Text(
+                                    "IT Assessment & Upgrade Services",
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 0.5),
+                                  ),
+                                ),
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return Consolidation();
+                                      },
+                                    ));
+                                  },
+                                  title: Text(
+                                    "Consolidation & Migration Services",
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 0.5),
+                                  ),
+                                ),
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return IT_Transformation();
+                                      },
+                                    ));
+                                  },
+                                  title: Text(
+                                    "IT Transformation",
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 0.5),
+                                  ),
+                                ),
+                                ListTile(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return EngineeringDemand();
+                                      },
+                                    ));
+                                  },
+                                  title: Text(
+                                    "Engineering on Demand",
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 0.5),
+                                  ),
+                                ),
+                              ]),
+                          Icon(
+                            Icons.arrow_drop_down,
+                            color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: width * 0.01,
+                    ),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return IndustriesWeServe();
+                            },
+                          ));
+                        },
+                        child: Text(
+                          "Industries We Serve",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                    SizedBox(
+                      width: width * 0.01,
+                    ),
+                    TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Blog",
+                          style: TextStyle(color: Colors.white),
+                        )),
+                  ])))
+        ],
+      ),
+    );
   }
 }
