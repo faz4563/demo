@@ -70,26 +70,17 @@ class _LandingPageState extends State<LandingPage> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 30),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 30, horizontal: 20),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               SizedBox(
-                                  width: width * 0.5,
+                                  width: width * 0.4,
                                   child: FittedBox(
                                     fit: BoxFit.contain,
                                     child: Row(
                                       children: [
-                                        TextButton(
-                                            onPressed: () {},
-                                            child: Text(
-                                              "Professional Services",
-                                              style: TextStyle(
-                                                  color: Colors.white),
-                                            )),
-                                        SizedBox(
-                                          width: width * 0.01,
-                                        ),
                                         TextButton(
                                             onPressed: () {
                                               Navigator.pushReplacement(context,
@@ -130,10 +121,15 @@ class _LandingPageState extends State<LandingPage> {
                                               fit: BoxFit.contain,
                                               child: WindowStyleDropdownMenu(
                                                   buttonTitle: "What We Do",
+                                                  dropdownWidth: 250,
                                                   dropdownBackgroundColor:
-                                                      Colors.cyanAccent,
+                                                      Colors.white,
                                                   dropdownItems: [
                                                     ListTile(
+                                                      contentPadding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 15,
+                                                              horizontal: 20),
                                                       onTap: () {
                                                         Navigator.pushReplacement(
                                                             context,
@@ -146,13 +142,17 @@ class _LandingPageState extends State<LandingPage> {
                                                       title: Text(
                                                         "IT Assessment & Upgrade Services",
                                                         style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             letterSpacing: 0.5),
                                                       ),
                                                     ),
                                                     ListTile(
+                                                      contentPadding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 15,
+                                                              horizontal: 20),
                                                       onTap: () {
                                                         Navigator.pushReplacement(
                                                             context,
@@ -165,13 +165,17 @@ class _LandingPageState extends State<LandingPage> {
                                                       title: Text(
                                                         "Consolidation & Migration Services",
                                                         style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             letterSpacing: 0.5),
                                                       ),
                                                     ),
                                                     ListTile(
+                                                      contentPadding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 15,
+                                                              horizontal: 20),
                                                       onTap: () {
                                                         Navigator.pushReplacement(
                                                             context,
@@ -184,13 +188,17 @@ class _LandingPageState extends State<LandingPage> {
                                                       title: Text(
                                                         "IT Transformation",
                                                         style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             letterSpacing: 0.5),
                                                       ),
                                                     ),
                                                     ListTile(
+                                                      contentPadding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 15,
+                                                              horizontal: 20),
                                                       onTap: () {
                                                         Navigator.pushReplacement(
                                                             context,
@@ -203,7 +211,7 @@ class _LandingPageState extends State<LandingPage> {
                                                       title: Text(
                                                         "Engineering on Demand",
                                                         style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             letterSpacing: 0.5),
@@ -292,7 +300,7 @@ class _LandingPageState extends State<LandingPage> {
                           child: FittedBox(
                             fit: BoxFit.contain,
                             child: const Text(
-                              "HEAR FROM OUR TEAM",
+                              "HEAR FROM OUR EXPERTS",
                               style: TextStyle(
                                   fontWeight: FontWeight.w600,
                                   letterSpacing: 1),
