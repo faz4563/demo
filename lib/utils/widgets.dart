@@ -58,7 +58,7 @@ class AppBarWidget extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return PreferredSize(
-      preferredSize: Size.fromHeight(50),
+      preferredSize: const Size.fromHeight(50),
       child: Container(
           height: 100,
           color: showWidget == true ? Colors.blue[900] : Colors.transparent,

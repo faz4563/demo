@@ -349,11 +349,13 @@ class _LandingPageState extends State<LandingPage> {
                   Container(
                     decoration:
                         BoxDecoration(border: Border.all(color: Colors.grey)),
-                    width: 500,
+                    width: 400,
                     height: 300,
-                    child: Image.asset(
-                      itAssessment,
-                      fit: BoxFit.cover,
+                    child: IntrinsicHeight(
+                      child: Image.asset(
+                        itAssessment,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   )
                 ],
@@ -375,11 +377,13 @@ class _LandingPageState extends State<LandingPage> {
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey)),
-                        width: 500,
+                        width: 400,
                         height: 300,
-                        child: Image.asset(
-                          documentation,
-                          fit: BoxFit.cover,
+                        child: IntrinsicHeight(
+                          child: Image.asset(
+                            documentation,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
@@ -439,11 +443,13 @@ class _LandingPageState extends State<LandingPage> {
                     child: Container(
                       decoration:
                           BoxDecoration(border: Border.all(color: Colors.grey)),
-                      width: 500,
+                      width: 400,
                       height: 300,
-                      child: Image.asset(
-                        digitalTransformation,
-                        fit: BoxFit.cover,
+                      child: IntrinsicHeight(
+                        child: Image.asset(
+                          digitalTransformation,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -468,11 +474,13 @@ class _LandingPageState extends State<LandingPage> {
                         child: Container(
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey)),
-                          width: 500,
+                          width: 400,
                           height: 300,
-                          child: Image.asset(
-                            engineerDemand,
-                            fit: BoxFit.cover,
+                          child: IntrinsicHeight(
+                            child: Image.asset(
+                              engineerDemand,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
@@ -533,11 +541,13 @@ class _LandingPageState extends State<LandingPage> {
                         Container(
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey)),
-                          width: 500,
+                          width: 400,
                           height: 300,
-                          child: Image.asset(
-                            partnerYouCanTrust,
-                            fit: BoxFit.cover,
+                          child: IntrinsicHeight(
+                            child: Image.asset(
+                              partnerYouCanTrust,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ],
@@ -564,9 +574,11 @@ class _LandingPageState extends State<LandingPage> {
                                 border: Border.all(color: Colors.grey)),
                             width: 400,
                             height: 300,
-                            child: Image.asset(
-                              trueUnderstanding,
-                              fit: BoxFit.cover,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                trueUnderstanding,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
@@ -630,9 +642,11 @@ class _LandingPageState extends State<LandingPage> {
                           child: SizedBox(
                             width: 400,
                             height: 300,
-                            child: Image.asset(
-                              strategiCustomization,
-                              fit: BoxFit.cover,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                strategiCustomization,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
@@ -644,84 +658,91 @@ class _LandingPageState extends State<LandingPage> {
               Container(
                 color: const Color.fromARGB(255, 212, 210, 210),
                 width: width,
-                height: height * 0.51,
-                child: Column(
+                height: height / 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 500,
-                          height: 300,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: SizedBox(
+                        width: 400,
+                        height: 300,
+                        child: IntrinsicHeight(
                           child: Image.asset(
                             smb,
                             fit: BoxFit.cover,
                           ),
                         ),
-
-                        SizedBox(
-                          width: 500,
-                          height: 300,
-                          child: Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SizedBox(
-                                  width: width * 0.33,
-                                  child: LandingPageContents.seeWhy,
-                                ),
-                                SizedBox(
-                                  height: 20,
-                                ),
-                                Expanded(
-                                  child: SizedBox(
-                                    width: width * 0.33,
-                                    height: height,
-                                    child: CarouselSlider(
-                                        items: [
-                                          SizedBox(
-                                            width: width / 3.2,
-                                            height: height,
-                                            child: LandingPageContents.comp1,
-                                          ),
-                                          SizedBox(
-                                            width: width / 3.2,
-                                            height: height,
-                                            child: LandingPageContents.comp2,
-                                          ),
-                                          SizedBox(
-                                            width: width / 3.2,
-                                            height: height,
-                                            child: LandingPageContents.comp3,
-                                          ),
-                                        ],
-                                        options: CarouselOptions(
-                                            aspectRatio: 1,
-                                            viewportFraction: 0.7 / 0.5,
-                                            animateToClosest: true,
-                                            autoPlay: true,
-                                            autoPlayCurve: Curves.easeIn)),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )
-
-                        // Column(
-                        //   mainAxisAlignment: MainAxisAlignment.start,
-                        //   crossAxisAlignment: CrossAxisAlignment.start,
-                        //   children: [
-
-                        //   ],
-                        // ),
-                      ],
+                      ),
                     ),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 20),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            child: LandingPageContents.seeWhy,
+                          ),
+                          SizedBox(
+                            width: width * 0.5,
+                            height: height * 0.3,
+                            child: CarouselSlider(
+                                items: [
+                                  SizedBox(
+                                    width: width,
+                                    height: height,
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 80),
+                                      child: ListView(children: [
+                                        LandingPageContents.comp1
+                                      ]),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: width,
+                                    height: height,
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 80),
+                                      child: ListView(children: [
+                                        LandingPageContents.comp2
+                                      ]),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: width,
+                                    height: height,
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 80),
+                                      child: ListView(children: [
+                                        LandingPageContents.comp3
+                                      ]),
+                                    ),
+                                  ),
+                                ],
+                                options: CarouselOptions(
+                                    viewportFraction: 1.2,
+                                    animateToClosest: true,
+                                    autoPlay: true,
+                                    autoPlayCurve: Curves.easeIn)),
+                          ),
+                        ],
+                      ),
+                    )
+
+                    // Column(
+                    //   mainAxisAlignment: MainAxisAlignment.start,
+                    //   crossAxisAlignment: CrossAxisAlignment.start,
+                    //   children: [
+
+                    //   ],
+                    // ),
                   ],
                 ),
               ),

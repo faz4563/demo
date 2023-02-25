@@ -255,27 +255,25 @@ Working with Avancer has been an absolute pleasure. They have provided us with t
     style: TextStyle(
         letterSpacing: 1,
         wordSpacing: 1,
-        height: 1.2,
+        height: 1.5,
         fontSize: 16,
         fontWeight: FontWeight.w400),
   );
 
   static Text comp2 = const Text(
-    '''
-Company 2 :- 
+    '''Company 2 :- 
 
 We recently switched to Avancer for our IT infrastructure needs, and we could not be happier with the results. Their team is incredibly professional and knowledgeable, and they identified and solved our IT challenges quickly. The solutions they provided have helped streamline our operations and increase productivity. If you are looking for a reliable and efficient IT solution, Avancer is your best bet.''',
     textAlign: TextAlign.start,
     style: TextStyle(
         letterSpacing: 1,
         wordSpacing: 1,
-        height: 1.2,
+        height: 1.5,
         fontSize: 16,
         fontWeight: FontWeight.w400),
   );
   static Text comp3 = const Text(
-    '''
-Company 3 :- 
+    '''Company 3 :- 
 
 I have been working with Avancer for several years now, and they continue to exceed my expectations. The expert team of Avancer quickly analyses the infrastructure, detects the problem, and implements the solution. The level of service and expertise they offer is unparalleled. 
 ''',
@@ -283,7 +281,7 @@ I have been working with Avancer for several years now, and they continue to exc
     style: TextStyle(
         letterSpacing: 1,
         wordSpacing: 1,
-        height: 1.2,
+        height: 1.5,
         fontSize: 16,
         fontWeight: FontWeight.w400),
   );

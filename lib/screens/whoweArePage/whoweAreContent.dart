@@ -17,7 +17,7 @@ class WhoWeAreContents {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String inFrench =
