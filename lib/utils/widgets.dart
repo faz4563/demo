@@ -64,7 +64,7 @@ class AppBarWidget extends StatelessWidget {
           color: showWidget == true ? Colors.blue[900] : Colors.transparent,
           child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
             SizedBox(
-                width: width * 0.5,
+                width: width * 0.4,
                 child: FittedBox(
                     fit: BoxFit.contain,
                     child: Row(children: [
