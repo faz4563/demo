@@ -45,7 +45,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
             letterSpacing: 1,
             wordSpacing: 1,
             height: 1.5,
-            fontSize: 14,
+            fontSize: 16,
             fontWeight: FontWeight.w400),
       ),
       TextSpan(
@@ -55,7 +55,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
               letterSpacing: 1,
               wordSpacing: 1,
               height: 1.5,
-              fontSize: 14,
+              fontSize: 16,
               fontWeight: FontWeight.w400),
           recognizer: TapGestureRecognizer()..onTap = () {})
     ]),
@@ -80,7 +80,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
             letterSpacing: 1,
             wordSpacing: 1,
             height: 1.5,
-            fontSize: 14,
+            fontSize: 16,
             fontWeight: FontWeight.w400),
       ),
       TextSpan(
@@ -108,7 +108,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
             letterSpacing: 1,
             wordSpacing: 1,
             height: 1.5,
-            fontSize: 14,
+            fontSize: 16,
             fontWeight: FontWeight.w400),
       ),
       TextSpan(
@@ -137,7 +137,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
             letterSpacing: 1,
             wordSpacing: 1,
             height: 1.5,
-            fontSize: 14,
+            fontSize: 16,
             fontWeight: FontWeight.w400),
       ),
       TextSpan(
@@ -164,7 +164,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
         letterSpacing: 1,
         wordSpacing: 1,
         height: 1.5,
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.w400),
   );
   static Text partner = const Text(
@@ -185,7 +185,7 @@ Our team of technicians, engineers and visionaries has guided organizations as t
         letterSpacing: 1,
         wordSpacing: 1,
         height: 1.5,
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.w400),
   );
   static Text gainTrue = const Text(
@@ -208,7 +208,7 @@ We’ll help you''',
         letterSpacing: 1,
         wordSpacing: 1,
         height: 1.5,
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.w400),
   );
 
@@ -231,7 +231,7 @@ Leveraging years of experience and harnessing the power of disruptive technologi
         letterSpacing: 1,
         wordSpacing: 1,
         height: 1.5,
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.w400),
   );
 
@@ -246,15 +246,45 @@ Leveraging years of experience and harnessing the power of disruptive technologi
     ),
   );
 
-  static Text iHaveOne = const Text(
+  static Text comp1 = const Text(
     '''
-I have one word for Avancer - Reliable. After we signed up for their services, their expert team got in touch with us and promptly collaborated to develop a strategic roadmap. Throughout the process, we were getting regular updates, and Avancer finished the infrastructure transformation before the deadline and within the budget. Excellent Job! Thank you.''',
+Company 1 :- 
+
+Working with Avancer has been an absolute pleasure. They have provided us with top-notch IT infrastructure solutions that have improved the efficiency of our business operations. Their team is knowledgeable and responsive and always goes above and beyond to ensure our needs are met. I highly recommend Avancer for any IT infrastructure needs.''',
     textAlign: TextAlign.start,
     style: TextStyle(
         letterSpacing: 1,
         wordSpacing: 1,
-        height: 1.5,
-        fontSize: 14,
+        height: 1.2,
+        fontSize: 16,
+        fontWeight: FontWeight.w400),
+  );
+
+  static Text comp2 = const Text(
+    '''
+Company 2 :- 
+
+We recently switched to Avancer for our IT infrastructure needs, and we could not be happier with the results. Their team is incredibly professional and knowledgeable, and they identified and solved our IT challenges quickly. The solutions they provided have helped streamline our operations and increase productivity. If you are looking for a reliable and efficient IT solution, Avancer is your best bet.''',
+    textAlign: TextAlign.start,
+    style: TextStyle(
+        letterSpacing: 1,
+        wordSpacing: 1,
+        height: 1.2,
+        fontSize: 16,
+        fontWeight: FontWeight.w400),
+  );
+  static Text comp3 = const Text(
+    '''
+Company 3 :- 
+
+I have been working with Avancer for several years now, and they continue to exceed my expectations. The expert team of Avancer quickly analyses the infrastructure, detects the problem, and implements the solution. The level of service and expertise they offer is unparalleled. 
+''',
+    textAlign: TextAlign.start,
+    style: TextStyle(
+        letterSpacing: 1,
+        wordSpacing: 1,
+        height: 1.2,
+        fontSize: 16,
         fontWeight: FontWeight.w400),
   );
 }
