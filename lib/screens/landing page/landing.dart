@@ -65,7 +65,7 @@ class _LandingPageState extends State<LandingPage> {
                 child: Container(
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(banner), fit: BoxFit.cover)),
+                          image: AssetImage(banner1), fit: BoxFit.cover)),
                   width: width,
                   child: Column(
                     children: [
@@ -281,7 +281,7 @@ class _LandingPageState extends State<LandingPage> {
                         fit: BoxFit.contain,
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushReplacement(
+                            Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ContactForm(),
@@ -340,10 +340,10 @@ class _LandingPageState extends State<LandingPage> {
                   SizedBox(
                     width: 400,
                     // height: 300,
-                    child: Image.asset(
-                      pic1,
-                      fit: BoxFit.cover,
-                    ),
+                    // child: Image.asset(
+                    //   pic1,
+                    //   fit: BoxFit.cover,
+                    // ),
                   )
                 ],
               ),
@@ -364,10 +364,10 @@ class _LandingPageState extends State<LandingPage> {
                       child: SizedBox(
                         width: 400,
                         // height: 300,
-                        child: Image.asset(
-                          pic1,
-                          fit: BoxFit.cover,
-                        ),
+                        // child: Image.asset(
+                        //   pic1,
+                        //   fit: BoxFit.cover,
+                        // ),
                       ),
                     ),
                     Column(
@@ -426,10 +426,10 @@ class _LandingPageState extends State<LandingPage> {
                     child: SizedBox(
                       width: 400,
                       // height: 300,
-                      child: Image.asset(
-                        pic1,
-                        fit: BoxFit.cover,
-                      ),
+                      // child: Image.asset(
+                      //   pic1,
+                      //   fit: BoxFit.cover,
+                      // ),
                     ),
                   ),
                 ],
@@ -453,10 +453,10 @@ class _LandingPageState extends State<LandingPage> {
                         child: SizedBox(
                           width: 400,
                           // height: 300,
-                          child: Image.asset(
-                            pic1,
-                            fit: BoxFit.cover,
-                          ),
+                          // child: Image.asset(
+                          //   pic1,
+                          //   fit: BoxFit.cover,
+                          // ),
                         ),
                       ),
                     ),
@@ -516,10 +516,10 @@ class _LandingPageState extends State<LandingPage> {
                         SizedBox(
                           width: 400,
                           // height: 300,
-                          child: Image.asset(
-                            pic2,
-                            fit: BoxFit.cover,
-                          ),
+                          // child: Image.asset(
+                          //   pic2,
+                          //   fit: BoxFit.cover,
+                          // ),
                         ),
                       ],
                     ),
@@ -543,10 +543,10 @@ class _LandingPageState extends State<LandingPage> {
                           child: SizedBox(
                             width: 400,
                             // height: 300,
-                            child: Image.asset(
-                              pic3,
-                              fit: BoxFit.cover,
-                            ),
+                            // child: Image.asset(
+                            //   pic3,
+                            //   fit: BoxFit.cover,
+                            // ),
                           ),
                         ),
                         Column(
@@ -609,10 +609,10 @@ class _LandingPageState extends State<LandingPage> {
                           child: SizedBox(
                             width: 400,
                             // height: 300,
-                            child: Image.asset(
-                              pic3,
-                              fit: BoxFit.cover,
-                            ),
+                            // child: Image.asset(
+                            //   pic3,
+                            //   fit: BoxFit.cover,
+                            // ),
                           ),
                         ),
                       ],
@@ -636,10 +636,10 @@ class _LandingPageState extends State<LandingPage> {
                         SizedBox(
                           width: 400,
                           // height: 300,
-                          child: Image.asset(
-                            pic3,
-                            fit: BoxFit.cover,
-                          ),
+                          // child: Image.asset(
+                          //   pic3,
+                          //   fit: BoxFit.cover,
+                          // ),
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.start,
