@@ -124,7 +124,7 @@ class _LandingPageState extends State<LandingPage> {
                                                 fit: BoxFit.contain,
                                                 child: WindowStyleDropdownMenu(
                                                     buttonTitle: "What We Do",
-                                                    dropdownWidth: 250,
+                                                    // dropdownWidth: 250,
                                                     dropdownBackgroundColor:
                                                         Colors.white,
                                                     dropdownItems: [
@@ -132,8 +132,6 @@ class _LandingPageState extends State<LandingPage> {
                                                         contentPadding:
                                                             EdgeInsets
                                                                 .symmetric(
-                                                                    vertical:
-                                                                        15,
                                                                     horizontal:
                                                                         20),
                                                         onTap: () {
@@ -148,7 +146,7 @@ class _LandingPageState extends State<LandingPage> {
                                                         title: Text(
                                                           "IT Assessment & Upgrade Services",
                                                           style: TextStyle(
-                                                              fontSize: 16,
+                                                              fontSize: 12,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w500,
@@ -160,8 +158,6 @@ class _LandingPageState extends State<LandingPage> {
                                                         contentPadding:
                                                             EdgeInsets
                                                                 .symmetric(
-                                                                    vertical:
-                                                                        15,
                                                                     horizontal:
                                                                         20),
                                                         onTap: () {
@@ -176,7 +172,7 @@ class _LandingPageState extends State<LandingPage> {
                                                         title: Text(
                                                           "Consolidation & Migration Services",
                                                           style: TextStyle(
-                                                              fontSize: 16,
+                                                              fontSize: 12,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w500,
@@ -188,8 +184,6 @@ class _LandingPageState extends State<LandingPage> {
                                                         contentPadding:
                                                             EdgeInsets
                                                                 .symmetric(
-                                                                    vertical:
-                                                                        15,
                                                                     horizontal:
                                                                         20),
                                                         onTap: () {
@@ -204,7 +198,7 @@ class _LandingPageState extends State<LandingPage> {
                                                         title: Text(
                                                           "IT Transformation",
                                                           style: TextStyle(
-                                                              fontSize: 16,
+                                                              fontSize: 12,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w500,
@@ -216,8 +210,6 @@ class _LandingPageState extends State<LandingPage> {
                                                         contentPadding:
                                                             EdgeInsets
                                                                 .symmetric(
-                                                                    vertical:
-                                                                        15,
                                                                     horizontal:
                                                                         20),
                                                         onTap: () {
@@ -232,7 +224,7 @@ class _LandingPageState extends State<LandingPage> {
                                                         title: Text(
                                                           "Engineering on Demand",
                                                           style: TextStyle(
-                                                              fontSize: 16,
+                                                              fontSize: 12,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w500,
@@ -375,7 +367,7 @@ class _LandingPageState extends State<LandingPage> {
                       height: 300,
                       child: IntrinsicHeight(
                         child: Image.asset(
-                          itAssessment,
+                          itAssessment1,
                           fit: BoxFit.cover,
                         ),
                       ),

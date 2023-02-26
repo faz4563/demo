@@ -2,31 +2,33 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class WhatWeDoContent {
-  static Text itAsseesmentTopic = const Text("IT Assessment & Upgrade Services: -",
+  static Text itAsseesmentTopic = const Text(
+      "IT Assessment & Upgrade Services: -",
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String itAssesmentContent =
       "IT assessment and upgrade services are critical to ensuring that your company's technology infrastructure is up-to-date and capable of supporting your business operations. As technology evolves and your organization's needs change, it is essential to periodically assess and upgrade your IT systems to ensure they remain reliable, secure, and efficient.";
 
-  static Text holistic = const Text("Holistic Assessment and Detailed Documentation: -",
+  static Text holistic = const Text(
+      "Holistic Assessment and Detailed Documentation: -",
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String ourIt =
-  '''Our IT assessment and upgrade services help you identify and upgrade areas of your infrastructure that need improvement, whether hardware, software, or security. Our expert team analyzes your current IT systems and identifies areas of risk or inefficiency, such as outdated hardware, inadequate security measures, or software that is no longer supported.''';
+      '''Our IT assessment and upgrade services help you identify and upgrade areas of your infrastructure that need improvement, whether hardware, software, or security. Our expert team analyzes your current IT systems and identifies areas of risk or inefficiency, such as outdated hardware, inadequate security measures, or software that is no longer supported.''';
 
   static Text upgrade = const Text("Upgrade Your Business Deserves : -",
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String weCollabrate =
@@ -36,7 +38,7 @@ class WhatWeDoContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String partnerWith =
