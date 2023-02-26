@@ -12,6 +12,7 @@ String itAssessment1 = "assets/images/IT Assessment.jpg";
 String itAssessment2 = "assets/images/assessment.jpg";
 String itExpert = "assets/images/itexpert.jpg";
 String mission = "assets/images/mission.jpg";
+String customer = "assets/images/customer.jpg";
 String oilService = "assets/images/oilservice.jpg";
 String partnerYouCanTrust = "assets/images/Partner you can trust.jpg";
 String retailService = "assets/images/retailService.jpg";

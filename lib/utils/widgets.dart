@@ -58,156 +58,167 @@ class AppBarWidget extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Container(
-        height: 100,
-        color: showWidget == true ? Colors.blue[900] : Colors.transparent,
-        child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-          SizedBox(
-              width: width * 0.4,
-              child: FittedBox(
-                  fit: BoxFit.contain,
-                  child: Row(children: [
-                    TextButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(context,
-                              MaterialPageRoute(
-                            builder: (context) {
-                              return const LandingPage();
+      height: 50,
+      color: showWidget == true ? Colors.blue[900] : Colors.transparent,
+      child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+        FittedBox(
+          fit: BoxFit.contain,
+          child: Row(
+            children: [
+              TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(context, MaterialPageRoute(
+                      builder: (context) {
+                        return LandingPage();
+                      },
+                    ));
+                  },
+                  child: Text(
+                    "Home",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              SizedBox(
+                width: width * 0.01,
+              ),
+              TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(context, MaterialPageRoute(
+                      builder: (context) {
+                        return WhoWeare();
+                      },
+                    ));
+                  },
+                  child: Text(
+                    "Who We Are",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              SizedBox(
+                width: width * 0.01,
+              ),
+              Row(
+                children: [
+                  FittedBox(
+                    fit: BoxFit.contain,
+                    child: WindowStyleDropdownMenu(
+                        buttonTitle: "What We Do",
+                        // dropdownWidth: 250,
+                        dropdownBackgroundColor: Colors.white,
+                        dropdownItems: [
+                          ListTile(
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 20),
+                            onTap: () {
+                              Navigator.pushReplacement(context,
+                                  MaterialPageRoute(
+                                builder: (context) {
+                                  return IT_Assesment();
+                                },
+                              ));
                             },
-                          ));
-                        },
-                        child: const Text(
-                          "Home",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                    SizedBox(
-                      width: width * 0.01,
-                    ),
-                    TextButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(context,
-                              MaterialPageRoute(
-                            builder: (context) {
-                              return const WhoWeare();
+                            title: Text(
+                              "IT Assessment & Upgrade Services",
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.5),
+                            ),
+                          ),
+                          ListTile(
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 20),
+                            onTap: () {
+                              Navigator.pushReplacement(context,
+                                  MaterialPageRoute(
+                                builder: (context) {
+                                  return Consolidation();
+                                },
+                              ));
                             },
-                          ));
-                        },
-                        child: const Text(
-                          "Who We Are",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                    SizedBox(
-                      width: width * 0.01,
-                    ),
-                    SizedBox(
-                      width: width * 0.095,
-                      child: Row(
-                        children: [
-                          WindowStyleDropdownMenu(
-                              buttonTitle: "What We Do",
-                              dropdownBackgroundColor: Colors.cyanAccent,
-                              dropdownItems: [
-                                ListTile(
-                                  onTap: () {
-                                    Navigator.pushReplacement(context,
-                                        MaterialPageRoute(
-                                      builder: (context) {
-                                        return const IT_Assesment();
-                                      },
-                                    ));
-                                  },
-                                  title: const Text(
-                                    "IT Assessment & Upgrade Services",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w500,
-                                        letterSpacing: 0.5),
-                                  ),
-                                ),
-                                ListTile(
-                                  onTap: () {
-                                    Navigator.pushReplacement(context,
-                                        MaterialPageRoute(
-                                      builder: (context) {
-                                        return const Consolidation();
-                                      },
-                                    ));
-                                  },
-                                  title: const Text(
-                                    "Consolidation & Migration Services",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w500,
-                                        letterSpacing: 0.5),
-                                  ),
-                                ),
-                                ListTile(
-                                  onTap: () {
-                                    Navigator.pushReplacement(context,
-                                        MaterialPageRoute(
-                                      builder: (context) {
-                                        return const IT_Transformation();
-                                      },
-                                    ));
-                                  },
-                                  title: const Text(
-                                    "IT Transformation",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w500,
-                                        letterSpacing: 0.5),
-                                  ),
-                                ),
-                                ListTile(
-                                  onTap: () {
-                                    Navigator.pushReplacement(context,
-                                        MaterialPageRoute(
-                                      builder: (context) {
-                                        return const EngineeringDemand();
-                                      },
-                                    ));
-                                  },
-                                  title: const Text(
-                                    "Engineering on Demand",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w500,
-                                        letterSpacing: 0.5),
-                                  ),
-                                ),
-                              ]),
-                          const Icon(
-                            Icons.arrow_drop_down,
-                            color: Colors.white,
+                            title: Text(
+                              "Consolidation & Migration Services",
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.5),
+                            ),
+                          ),
+                          ListTile(
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 20),
+                            onTap: () {
+                              Navigator.pushReplacement(context,
+                                  MaterialPageRoute(
+                                builder: (context) {
+                                  return IT_Transformation();
+                                },
+                              ));
+                            },
+                            title: Text(
+                              "IT Transformation",
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.5),
+                            ),
+                          ),
+                          ListTile(
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 20),
+                            onTap: () {
+                              Navigator.pushReplacement(context,
+                                  MaterialPageRoute(
+                                builder: (context) {
+                                  return EngineeringDemand();
+                                },
+                              ));
+                            },
+                            title: Text(
+                              "Engineering on Demand",
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.5),
+                            ),
                           )
-                        ],
-                      ),
+                        ]),
+                  ),
+                  FittedBox(
+                    fit: BoxFit.contain,
+                    child: Icon(
+                      Icons.arrow_drop_down,
+                      color: Colors.white,
                     ),
-                    SizedBox(
-                      width: width * 0.01,
-                    ),
-                    TextButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(context,
-                              MaterialPageRoute(
-                            builder: (context) {
-                              return const IndustriesWeServe();
-                            },
-                          ));
-                        },
-                        child: const Text(
-                          "Industries We Serve",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                    SizedBox(
-                      width: width * 0.01,
-                    ),
-                    TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Blog",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  ])))
-        ]));
+                  )
+                ],
+              ),
+              SizedBox(
+                width: width * 0.01,
+              ),
+              TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => IndustriesWeServe(),
+                        ));
+                  },
+                  child: Text(
+                    "Industries We Serve",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              SizedBox(
+                width: width * 0.01,
+              ),
+              TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    "Blog",
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ],
+          ),
+        ),
+      ]),
+    );
   }
 }
