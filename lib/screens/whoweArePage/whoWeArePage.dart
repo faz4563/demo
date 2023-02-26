@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:demo/utils/images.dart';
 import 'package:flutter/material.dart';
 import '../../utils/widgets.dart';
 import '../landing page/landing.dart';
@@ -19,7 +20,7 @@ class _WhoWeareState extends State<WhoWeare> {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: const Color(0xff071d56),
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: AppBarWidget(
             showWidget: false,
@@ -30,170 +31,290 @@ class _WhoWeareState extends State<WhoWeare> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
           child: SingleChildScrollView(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: WhoWeAreContents.whoWeAre),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: WhoWeAreContents.basedIn,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: WhoWeAreContents.ourCompany),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: WhoWeAreContents.inFrench,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: WhoWeAreContents.ourVision),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: WhoWeAreContents.toBuild,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: WhoWeAreContents.ourMission),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: WhoWeAreContents.toDevelope,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: WhoWeAreContents.ourTeam),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: WhoWeAreContents.fromExpert,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: WhoWeAreContents.whyUs),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: WhoWeAreContents.marketInteligence,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                ]),
+            child: Card(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 500,
+                            height: 615,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                whoWeAre1,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  WhoWeAreContents.whoWeAre,
+                                  SizedBox(
+                                    child: RichText(
+                                        textAlign: TextAlign.left,
+                                        text: TextSpan(children: [
+                                          TextSpan(
+                                              text: WhoWeAreContents.basedIn,
+                                              style: const TextStyle(
+                                                  fontSize: 16,
+                                                  height: 1.6,
+                                                  wordSpacing: 1.5,
+                                                  color: Colors.black,
+                                                  fontWeight:
+                                                      FontWeight.normal)),
+                                        ])),
+                                  ),
+                                  const SizedBox(
+                                    height: 30,
+                                  ),
+                                  WhoWeAreContents.ourCompany,
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  SizedBox(
+                                    // width: 1100,
+                                    child: RichText(
+                                        textAlign: TextAlign.left,
+                                        text: TextSpan(children: [
+                                          TextSpan(
+                                              text: WhoWeAreContents.inFrench,
+                                              style: const TextStyle(
+                                                  fontSize: 16,
+                                                  height: 1.6,
+                                                  wordSpacing: 1.5,
+                                                  color: Colors.black,
+                                                  fontWeight:
+                                                      FontWeight.normal)),
+                                        ])),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                WhoWeAreContents.ourVision,
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                SizedBox(
+                                  // width: 1100,
+                                  child: RichText(
+                                      textAlign: TextAlign.left,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                            text: WhoWeAreContents.toBuild,
+                                            style: const TextStyle(
+                                                fontSize: 16,
+                                                height: 1.6,
+                                                wordSpacing: 1.5,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal)),
+                                      ])),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 490,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                vision,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 480,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                mission,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                WhoWeAreContents.ourMission,
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                SizedBox(
+                                  // width: 1100,
+                                  child: RichText(
+                                      textAlign: TextAlign.left,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                            text: WhoWeAreContents.toDevelope,
+                                            style: const TextStyle(
+                                                fontSize: 16,
+                                                height: 1.6,
+                                                wordSpacing: 1.5,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal)),
+                                      ])),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                WhoWeAreContents.ourTeam,
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                SizedBox(
+                                  width: 1100,
+                                  child: RichText(
+                                      textAlign: TextAlign.left,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                            text: WhoWeAreContents.fromExpert,
+                                            style: const TextStyle(
+                                                fontSize: 16,
+                                                height: 1.6,
+                                                wordSpacing: 1.5,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal)),
+                                      ])),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                WhoWeAreContents.whyUs,
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                SizedBox(
+                                  // width: 1100,
+                                  child: RichText(
+                                      textAlign: TextAlign.left,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                            text: WhoWeAreContents.fromExpert,
+                                            style: const TextStyle(
+                                                fontSize: 16,
+                                                height: 1.6,
+                                                wordSpacing: 1.5,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal)),
+                                      ])),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 490,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                askAnExpert,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                    // const SizedBox(
+                    //   height: 20,
+                    // ),
+                    // const SizedBox(
+                    //   height: 20,
+                    // ),
+
+                    // const SizedBox(
+                    //   height: 10,
+                    // ),
+                    // SizedBox(
+                    //   width: 1100,
+                    //   child: RichText(
+                    //       textAlign: TextAlign.left,
+                    //       text: TextSpan(children: [
+                    //         TextSpan(
+                    //             text: WhoWeAreContents.marketInteligence,
+                    //             style: const TextStyle(
+                    //                 fontSize: 16,
+                    //                 height: 1.6,
+                    //                 wordSpacing: 1.5,
+                    //                 color: Colors.white,
+                    //                 fontWeight: FontWeight.normal)),
+                    //       ])),
+                    // ),
+                  ]),
+            ),
           ),
         ),
       ),

@@ -7,7 +7,7 @@ class WhoWeAreContents {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String basedIn =
@@ -22,9 +22,9 @@ class WhoWeAreContents {
 
   static String inFrench =
       '''In french, Avancer means Move Forward. As the meaning implies, Avancer keeps moving forward for our customers, upgrading our arsenal with advanced technology and training our team to keep up with the trends. At Avancer, we are committed to helping SMBs make progress by providing high-impact IT infrastructure professional solutions.
-
+  
   When the pandemic-induced lockdowns stalled the whole world, the bigger organizations had the expertise and technological capabilities to run the operations. Hyperlocal businesses and SMBs, on the other hand, were struggling to comprehend the unprecedented market shift. We at Avancer understood the predicament of SMBs. We scaled up our business, dedicated to making SMBs future-proof. Capitalizing on our multi-disciplinary experience, we began providing professional IT infrastructure solutions, helping SMBs modernize their business and meet the market's evolving needs. Our speciality lies in our capability to grasp the problem and craft customized IT solutions within your budget.
-
+  
   At Avancer, we hold "IT Modernisation is the outcome of a habit, not a Random act". Our exceptional IT consulting services help businesses embrace modernization and save on IT expenses. We effectively support your infrastructure with expert-to-expert oversight and on-demand staff, enabling you to focus on business operations and increase productivity. Additionally, with Avancer, businesses can hire an engineer at a moment's notice to help with regular maintenance, software upgrades, troubleshooting, training, or IT crisis resolution.
 ''';
 
@@ -32,7 +32,7 @@ class WhoWeAreContents {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String toBuild =
@@ -42,7 +42,7 @@ class WhoWeAreContents {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String toDevelope =
@@ -52,7 +52,7 @@ class WhoWeAreContents {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String fromExpert =
@@ -62,7 +62,7 @@ class WhoWeAreContents {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String marketInteligence = '''  * Market Intelligence
