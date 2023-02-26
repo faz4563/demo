@@ -69,7 +69,7 @@ class AppBarWidget extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushReplacement(context, MaterialPageRoute(
                       builder: (context) {
-                        return LandingPage();
+                        return const LandingPage();
                       },
                     ));
                   },
