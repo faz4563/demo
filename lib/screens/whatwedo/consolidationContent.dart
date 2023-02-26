@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ConsolidationContent {
-  static Text consolidation = const Text("Consolidation & Migration Services: -",
+  static Text consolidation = const Text(
+      "Consolidation & Migration Services: -",
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String atAvancer =
@@ -15,17 +16,18 @@ class ConsolidationContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String throughOur =
-  '''Through our Migration services, businesses can move IT systems, applications, or data from one platform to another. We help companies to migrate to a new operating system, upgrade to a recent version of a software application, or move data from on-premises systems to cloud-based systems.''';
+      '''Through our Migration services, businesses can move IT systems, applications, or data from one platform to another. We help companies to migrate to a new operating system, upgrade to a recent version of a software application, or move data from on-premises systems to cloud-based systems.''';
 
-  static Text strategic = const Text("Strategic Roadmap & Customized Solution: -",
+  static Text strategic = const Text(
+      "Strategic Roadmap & Customized Solution: -",
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String ourTeamCollabrate =
@@ -35,10 +37,9 @@ class ConsolidationContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String partnerWith_consolidation =
       "Partner with us today to benefit from our comprehensive consolidation or migration solutions tailored to your unique needs.";
-
 }

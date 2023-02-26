@@ -1,6 +1,7 @@
 import 'package:demo/screens/whatwedo/consolidationContent.dart';
 import 'package:flutter/material.dart';
 
+import '../../utils/images.dart';
 import '../../utils/widgets.dart';
 import '../landing page/landing.dart';
 import 'itAssesmentContent.dart';
@@ -30,117 +31,225 @@ class _ConsolidationState extends State<Consolidation> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
           child: SingleChildScrollView(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: ConsolidationContent.consolidation),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: ConsolidationContent.atAvancer,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: ConsolidationContent.migration),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: ConsolidationContent.throughOur,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: ConsolidationContent.strategic),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: ConsolidationContent.ourTeamCollabrate,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                        padding: const EdgeInsets.only(left: 40),
-                        child: ConsolidationContent.partner_consolidation),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 1100,
-                    child: RichText(
-                        textAlign: TextAlign.left,
-                        text: TextSpan(children: [
-                          TextSpan(
-                              text: ConsolidationContent
-                                  .partnerWith_consolidation,
-                              style: const TextStyle(
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  wordSpacing: 1.5,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.normal)),
-                        ])),
-                  ),
-                ]),
+            child: Card(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 500,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                oilService,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ConsolidationContent.consolidation,
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              SizedBox(
+                                width: 1100,
+                                child: RichText(
+                                    textAlign: TextAlign.left,
+                                    text: TextSpan(children: [
+                                      TextSpan(
+                                          text: ConsolidationContent.atAvancer,
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              height: 1.6,
+                                              wordSpacing: 1.5,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.normal)),
+                                    ])),
+                              ),
+                            ],
+                          ))
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ConsolidationContent.migration,
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              SizedBox(
+                                child: RichText(
+                                    textAlign: TextAlign.left,
+                                    text: TextSpan(children: [
+                                      TextSpan(
+                                          text: ConsolidationContent.throughOur,
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              height: 1.6,
+                                              wordSpacing: 1.5,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.normal)),
+                                    ])),
+                              ),
+                            ],
+                          )),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 500,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                strategiCustomization,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 500,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                strategicSolution,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ConsolidationContent.strategic,
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              SizedBox(
+                                child: RichText(
+                                    textAlign: TextAlign.left,
+                                    text: TextSpan(children: [
+                                      TextSpan(
+                                          text: ConsolidationContent
+                                              .ourTeamCollabrate,
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              height: 1.6,
+                                              wordSpacing: 1.5,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.normal)),
+                                    ])),
+                              ),
+                            ],
+                          ))
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ConsolidationContent.partner_consolidation,
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              SizedBox(
+                                child: RichText(
+                                    textAlign: TextAlign.left,
+                                    text: TextSpan(children: [
+                                      TextSpan(
+                                          text: ConsolidationContent
+                                              .partnerWith_consolidation,
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              height: 1.6,
+                                              wordSpacing: 1.5,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.normal)),
+                                    ])),
+                              ),
+                            ],
+                          )),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 500,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                retailService,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ]),
+            ),
           ),
         ),
       ),
