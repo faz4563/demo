@@ -7,7 +7,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String weAreNotJust =
@@ -17,7 +17,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
   static String oilGasIndustry =
       '''The oil and gas industry is heavily dependent on data management and analysis. Our solutions help companies in the oil industry to optimize their operations, reduce downtime, and increase their overall profitability.''';
@@ -27,7 +27,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String itSolutions =
@@ -37,7 +37,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String weOfferFinancial =
