@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:demo/controllers/emailFunction.dart';
 import 'package:demo/utils/images.dart';
 import 'package:flutter/material.dart';
 
