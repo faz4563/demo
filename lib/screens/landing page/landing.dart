@@ -68,7 +68,7 @@ class _LandingPageState extends State<LandingPage> {
                   child: Container(
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage(banner1), fit: BoxFit.cover)),
+                            image: AssetImage(banner2), fit: BoxFit.cover)),
                     width: width,
                     child: Column(
                       children: [

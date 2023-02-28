@@ -73,7 +73,7 @@ class AppBarWidget extends StatelessWidget {
                       },
                     ));
                   },
-                  child: Text(
+                  child: const Text(
                     "Home",
                     style: TextStyle(color: Colors.white),
                   )),
@@ -84,11 +84,11 @@ class AppBarWidget extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushReplacement(context, MaterialPageRoute(
                       builder: (context) {
-                        return WhoWeare();
+                        return const WhoWeare();
                       },
                     ));
                   },
-                  child: Text(
+                  child: const Text(
                     "Who We Are",
                     style: TextStyle(color: Colors.white),
                   )),
@@ -106,16 +106,16 @@ class AppBarWidget extends StatelessWidget {
                         dropdownItems: [
                           ListTile(
                             contentPadding:
-                                EdgeInsets.symmetric(horizontal: 20),
+                                const EdgeInsets.symmetric(horizontal: 20),
                             onTap: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(
                                 builder: (context) {
-                                  return IT_Assesment();
+                                  return const IT_Assesment();
                                 },
                               ));
                             },
-                            title: Text(
+                            title: const Text(
                               "IT Assessment & Upgrade Services",
                               style: TextStyle(
                                   fontSize: 12,
@@ -125,16 +125,16 @@ class AppBarWidget extends StatelessWidget {
                           ),
                           ListTile(
                             contentPadding:
-                                EdgeInsets.symmetric(horizontal: 20),
+                                const EdgeInsets.symmetric(horizontal: 20),
                             onTap: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(
                                 builder: (context) {
-                                  return Consolidation();
+                                  return const Consolidation();
                                 },
                               ));
                             },
-                            title: Text(
+                            title: const Text(
                               "Consolidation & Migration Services",
                               style: TextStyle(
                                   fontSize: 12,
@@ -144,16 +144,16 @@ class AppBarWidget extends StatelessWidget {
                           ),
                           ListTile(
                             contentPadding:
-                                EdgeInsets.symmetric(horizontal: 20),
+                                const EdgeInsets.symmetric(horizontal: 20),
                             onTap: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(
                                 builder: (context) {
-                                  return IT_Transformation();
+                                  return const IT_Transformation();
                                 },
                               ));
                             },
-                            title: Text(
+                            title: const Text(
                               "IT Transformation",
                               style: TextStyle(
                                   fontSize: 12,
@@ -163,16 +163,16 @@ class AppBarWidget extends StatelessWidget {
                           ),
                           ListTile(
                             contentPadding:
-                                EdgeInsets.symmetric(horizontal: 20),
+                                const EdgeInsets.symmetric(horizontal: 20),
                             onTap: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(
                                 builder: (context) {
-                                  return EngineeringDemand();
+                                  return const EngineeringDemand();
                                 },
                               ));
                             },
-                            title: Text(
+                            title: const Text(
                               "Engineering on Demand",
                               style: TextStyle(
                                   fontSize: 12,
@@ -182,7 +182,7 @@ class AppBarWidget extends StatelessWidget {
                           )
                         ]),
                   ),
-                  FittedBox(
+                  const FittedBox(
                     fit: BoxFit.contain,
                     child: Icon(
                       Icons.arrow_drop_down,
@@ -199,10 +199,10 @@ class AppBarWidget extends StatelessWidget {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => IndustriesWeServe(),
+                          builder: (context) => const IndustriesWeServe(),
                         ));
                   },
-                  child: Text(
+                  child: const Text(
                     "Industries We Serve",
                     style: TextStyle(color: Colors.white),
                   )),

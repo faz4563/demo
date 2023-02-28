@@ -56,7 +56,7 @@ class WhoWeAreContents {
           fontWeight: FontWeight.w700));
 
   static String fromExpert =
-      "From expert advice on designing or implementing the latest technology to taking on the responsibility of your IT infrastructure, our team is ready to help.[Team Members Photos]";
+      "From expert advice on designing or implementing the latest technology to taking on the responsibility of your IT infrastructure, our team is ready to help. ";
 
   static Text whyUs = const Text("Why Us: -",
       style: TextStyle(

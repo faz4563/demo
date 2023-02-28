@@ -51,7 +51,7 @@ class _IT_TransformationState extends State<IT_Transformation> {
                             height: 280,
                             child: IntrinsicHeight(
                               child: Image.asset(
-                                itExpert,
+                                digitalTransformation,
                                 fit: BoxFit.cover,
                               ),
                             ),
