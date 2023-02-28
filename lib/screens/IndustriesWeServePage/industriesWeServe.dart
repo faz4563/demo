@@ -268,6 +268,121 @@ class IndustriesWeServe extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey)),
+                          width: 500,
+                          height: 280,
+                          child: IntrinsicHeight(
+                            child: Image.asset(
+                              educationService,
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                            child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  IndustriesContent.education,
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  SizedBox(
+                                    width: 1100,
+                                    child: RichText(
+                                        textAlign: TextAlign.left,
+                                        text: TextSpan(children: [
+                                          TextSpan(
+                                              text: IndustriesContent.weDevelop,
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  height: 1.6,
+                                                  wordSpacing: 1.5,
+                                                  color: Colors.black,
+                                                  fontWeight:
+                                                      FontWeight.normal)),
+                                        ])),
+                                  ),
+                                ]),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                            child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  IndustriesContent.transportation,
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  SizedBox(
+                                    width: 1100,
+                                    child: RichText(
+                                        textAlign: TextAlign.left,
+                                        text: TextSpan(children: [
+                                          TextSpan(
+                                              text: IndustriesContent
+                                                  .ourteamSpecializes,
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  height: 1.6,
+                                                  wordSpacing: 1.5,
+                                                  color: Colors.black,
+                                                  fontWeight:
+                                                      FontWeight.normal)),
+                                        ])),
+                                  ),
+                                ]),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey)),
+                            width: 500,
+                            height: 280,
+                            child: IntrinsicHeight(
+                              child: Image.asset(
+                                financialService,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -289,30 +404,7 @@ class IndustriesWeServe extends StatelessWidget {
                      
                         
                       
-                      //       Align(
-                      //         alignment: Alignment.centerLeft,
-                      //         child: Padding(
-                      //             padding: const EdgeInsets.only(left: 40),
-                      //             child: IndustriesContent.financial),
-                      //       ),
-                      //       SizedBox(
-                      //         height: 10,
-                      //       ),
-                      //       SizedBox(
-                      //         width: 1100,
-                      //         child: RichText(
-                      //             textAlign: TextAlign.left,
-                      //             text: TextSpan(children: [
-                      //               TextSpan(
-                      //                   text: IndustriesContent.weOfferFinancial,
-                      //                   style: TextStyle(
-                      //                       fontSize: 16,
-                      //                       height: 1.6,
-                      //                       wordSpacing: 1.5,
-                      //                       color: Colors.white,
-                      //                       fontWeight: FontWeight.normal)),
-                      //             ])),
-                      //       ),
+                    
                       //       SizedBox(
                       //         height: 20,
                       //       ),
@@ -325,21 +417,7 @@ class IndustriesWeServe extends StatelessWidget {
                       //       SizedBox(
                       //         height: 10,
                       //       ),
-                      //       SizedBox(
-                      //         width: 1100,
-                      //         child: RichText(
-                      //             textAlign: TextAlign.left,
-                      //             text: TextSpan(children: [
-                      //               TextSpan(
-                      //                   text: IndustriesContent.weDevelop,
-                      //                   style: TextStyle(
-                      //                       fontSize: 16,
-                      //                       height: 1.6,
-                      //                       wordSpacing: 1.5,
-                      //                       color: Colors.white,
-                      //                       fontWeight: FontWeight.normal)),
-                      //             ])),
-                      //       ),
+                     
                       //       SizedBox(
                       //         height: 20,
                       //       ),

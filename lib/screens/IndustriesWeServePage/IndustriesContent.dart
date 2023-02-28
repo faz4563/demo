@@ -47,7 +47,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
 
   static String weDevelop =
@@ -57,7 +57,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
   static String companies =
       '''Companies offering retail consulting services leverage our IT solutions to manage their operations, data, and customer interactions. Our solutions help retail consulting companies optimize their supply chain, improve customer service, and increase their overall profitability.''';
@@ -67,7 +67,7 @@ class IndustriesContent {
       style: TextStyle(
           letterSpacing: 1,
           fontSize: 18,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w700));
   static String ourteamSpecializes =
       ''' Our team specializes in developing and implementing IT solutions that help companies manage large amounts of data and optimize their logistics networks. With our solutions, companies can improve their logistics efficiency, reduce costs, and increase customer satisfaction.''';
