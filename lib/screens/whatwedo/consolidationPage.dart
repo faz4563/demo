@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../utils/images.dart';
 import '../../utils/widgets.dart';
-import '../landing page/landing.dart';
-import 'itAssesmentContent.dart';
 
 class Consolidation extends StatefulWidget {
   const Consolidation({Key? key}) : super(key: key);

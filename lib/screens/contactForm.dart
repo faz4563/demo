@@ -1,6 +1,5 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, camel_case_types
 
-import 'package:demo/controllers/emailFunction.dart';
 import 'package:demo/utils/images.dart';
 import 'package:flutter/material.dart';
 
@@ -28,158 +27,193 @@ class ContactFormState extends State<ContactForm> {
       color: Colors.blue[800],
       width: width,
       height: height,
-      child: Align(
-        alignment: Alignment.center,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: width / 2,
-                height: height,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(15),
-                        bottomLeft: Radius.circular(15)),
-                    color: Colors.white,
-                    image: DecorationImage(
-                        image: AssetImage(askAnExpert), fit: BoxFit.cover)),
+      child: contactFormContent(width: width, height: height),
+    ));
+  }
+}
+
+class contactFormContent extends StatelessWidget {
+  const contactFormContent({
+    Key? key,
+    required this.width,
+    required this.height,
+  }) : super(key: key);
+
+  final double width;
+  final double height;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.center,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              width: width / 2,
+              height: height,
+              // color: Colors.white,
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    bottomLeft: Radius.circular(15)),
+                color: Colors.white,
+                // image: DecorationImage(
+                //     image: AssetImage(askAnExpert), fit: BoxFit.cover)
               ),
-              Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(
+                    left: 40, top: 35, bottom: 35, right: 10),
                 child: Container(
-                  width: width / 6,
-                  height: height,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(15),
-                        bottomRight: Radius.circular(15)),
-                  ),
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 40, vertical: 30),
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15)),
-                          color: Colors.white38,
-                          child: SizedBox(
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 20),
-                              child: SingleChildScrollView(
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 20, vertical: 20),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: [
-                                      TextFormField(
-                                        decoration: const InputDecoration(
-                                            labelText: "First Name"),
-                                        controller: firstNameController,
-                                      ),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      TextFormField(
-                                        decoration: const InputDecoration(
-                                            labelText: "Last Name"),
-                                        controller: lastNameController,
-                                      ),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      TextFormField(
-                                        decoration: const InputDecoration(
-                                            labelText: "Email ID"),
-                                        controller: emailController,
-                                      ),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      TextFormField(
-                                        decoration: const InputDecoration(
-                                            labelText: "Company Name"),
-                                        controller: compNameController,
-                                      ),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      DropdownButtonFormField(
-                                        value: "1",
-                                        items: const [
-                                          DropdownMenuItem(
-                                            value: "1",
-                                            child: Text(
-                                              "IT services required",
-                                              style: TextStyle(
-                                                  color: Color.fromARGB(
-                                                      255, 91, 90, 90)),
-                                            ),
+                  decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(15),
+                      ),
+                      // color: Colors.white,
+                      image: DecorationImage(
+                          image: AssetImage(askAnExpert), fit: BoxFit.cover)),
+                  // child: Image.asset(
+                  //   askAnExpert,
+                  //   fit: BoxFit.fitHeight,
+                  // ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                width: width / 12,
+                height: height,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(15),
+                      bottomRight: Radius.circular(15)),
+                ),
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 30),
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15)),
+                        color: Colors.white38,
+                        child: SizedBox(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                            child: SingleChildScrollView(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 20),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    TextFormField(
+                                      decoration: const InputDecoration(
+                                          labelText: "First Name"),
+                                      controller: firstNameController,
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    TextFormField(
+                                      decoration: const InputDecoration(
+                                          labelText: "Last Name"),
+                                      controller: lastNameController,
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    TextFormField(
+                                      decoration: const InputDecoration(
+                                          labelText: "Email ID"),
+                                      controller: emailController,
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    TextFormField(
+                                      decoration: const InputDecoration(
+                                          labelText: "Company Name"),
+                                      controller: compNameController,
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    DropdownButtonFormField(
+                                      value: "1",
+                                      items: const [
+                                        DropdownMenuItem(
+                                          value: "1",
+                                          child: Text(
+                                            "IT services required",
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 91, 90, 90)),
                                           ),
-                                          DropdownMenuItem(
-                                            value: "2",
-                                            child: Text("data1"),
-                                          ),
-                                          DropdownMenuItem(
-                                            value: "3",
-                                            child: Text("data2"),
-                                          ),
-                                          DropdownMenuItem(
-                                            value: "4",
-                                            child: Text("data3"),
-                                          )
-                                        ],
-                                        onChanged: (value) {},
-                                      ),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      TextFormField(
-                                        expands: false,
-                                        maxLines: 10,
-                                        decoration: InputDecoration(
-                                            border: OutlineInputBorder(
-                                                borderSide: const BorderSide(
-                                                    color: Colors.black),
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            hintText:
-                                                "Tell us about your IT requirements"),
-                                        controller: requirementsController,
-                                      ),
-                                    ],
-                                  ),
+                                        ),
+                                        DropdownMenuItem(
+                                          value: "2",
+                                          child: Text("data1"),
+                                        ),
+                                        DropdownMenuItem(
+                                          value: "3",
+                                          child: Text("data2"),
+                                        ),
+                                        DropdownMenuItem(
+                                          value: "4",
+                                          child: Text("data3"),
+                                        )
+                                      ],
+                                      onChanged: (value) {},
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    TextFormField(
+                                      expands: false,
+                                      maxLines: 10,
+                                      decoration: InputDecoration(
+                                          border: OutlineInputBorder(
+                                              borderSide: const BorderSide(
+                                                  color: Colors.black),
+                                              borderRadius:
+                                                  BorderRadius.circular(10)),
+                                          hintText:
+                                              "Tell us about your IT requirements"),
+                                      controller: requirementsController,
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
                           ),
                         ),
                       ),
-                      Positioned(
-                          bottom: 80,
-                          right: 75,
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            style: ElevatedButton.styleFrom(
-                                fixedSize: const Size(80, 30)),
-                            child: const Text("Submit"),
-                          ))
-                    ],
-                  ),
+                    ),
+                    Positioned(
+                        bottom: 80,
+                        right: 75,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                              fixedSize: const Size(80, 30)),
+                          child: const Text("Submit"),
+                        ))
+                  ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
-    ));
+    );
   }
 }

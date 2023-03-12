@@ -29,7 +29,7 @@ class _WhoWeareState extends State<WhoWeare> {
         width: width,
         height: height,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 15),
           child: SingleChildScrollView(
             child: Card(
               child: Column(
@@ -38,7 +38,7 @@ class _WhoWeareState extends State<WhoWeare> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 20),
+                          horizontal: 80, vertical: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +47,7 @@ class _WhoWeareState extends State<WhoWeare> {
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.grey)),
                             width: 500,
-                            height: 615,
+                            height: 700,
                             child: IntrinsicHeight(
                               child: Image.asset(
                                 whoWeAre1,
@@ -111,7 +111,7 @@ class _WhoWeareState extends State<WhoWeare> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 20),
+                          horizontal: 80, vertical: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,6 +132,28 @@ class _WhoWeareState extends State<WhoWeare> {
                                       text: TextSpan(children: [
                                         TextSpan(
                                             text: WhoWeAreContents.toBuild,
+                                            style: const TextStyle(
+                                                fontSize: 16,
+                                                height: 1.6,
+                                                wordSpacing: 1.5,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal)),
+                                      ])),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                WhoWeAreContents.ourMission,
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                SizedBox(
+                                  // width: 1100,
+                                  child: RichText(
+                                      textAlign: TextAlign.left,
+                                      text: TextSpan(children: [
+                                        TextSpan(
+                                            text: WhoWeAreContents.toDevelope,
                                             style: const TextStyle(
                                                 fontSize: 16,
                                                 height: 1.6,
@@ -166,8 +188,10 @@ class _WhoWeareState extends State<WhoWeare> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 20),
+                          horizontal: 80, vertical: 20),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             decoration: BoxDecoration(
@@ -184,30 +208,12 @@ class _WhoWeareState extends State<WhoWeare> {
                           const SizedBox(
                             width: 20,
                           ),
+                          // const Spacer(),
                           Expanded(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                WhoWeAreContents.ourMission,
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                SizedBox(
-                                  // width: 1100,
-                                  child: RichText(
-                                      textAlign: TextAlign.left,
-                                      text: TextSpan(children: [
-                                        TextSpan(
-                                            text: WhoWeAreContents.toDevelope,
-                                            style: const TextStyle(
-                                                fontSize: 16,
-                                                height: 1.6,
-                                                wordSpacing: 1.5,
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.normal)),
-                                      ])),
-                                ),
                                 const SizedBox(
                                   height: 20,
                                 ),
@@ -238,9 +244,9 @@ class _WhoWeareState extends State<WhoWeare> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 20),
+                          horizontal: 100, vertical: 20),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
@@ -258,7 +264,8 @@ class _WhoWeareState extends State<WhoWeare> {
                                       textAlign: TextAlign.left,
                                       text: TextSpan(children: [
                                         TextSpan(
-                                            text: WhoWeAreContents.fromExpert,
+                                            text: WhoWeAreContents
+                                                .marketInteligence,
                                             style: const TextStyle(
                                                 fontSize: 16,
                                                 height: 1.6,

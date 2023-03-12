@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class WhatWeDoContent {
@@ -51,20 +50,20 @@ class WhatWeDoContent {
           color: Colors.white,
           fontWeight: FontWeight.w700));
 
-  static String fromExpert =
-      "From expert advice on designing or implementing the latest technology to taking on the responsibility of your IT infrastructure, our team is ready to help.[Team Members Photos]";
+  // static String fromExpert =
+  //     "From expert advice on designing or implementing the latest technology to taking on the responsibility of your IT infrastructure, our team is ready to help.[Team Members Photos]";
 
-  static Text whyUs = const Text("Why Us: -",
-      style: TextStyle(
-          letterSpacing: 1,
-          fontSize: 18,
-          color: Colors.white,
-          fontWeight: FontWeight.w700));
+  // static Text whyUs = const Text("Why Us: -",
+  //     style: TextStyle(
+  //         letterSpacing: 1,
+  //         fontSize: 18,
+  //         color: Colors.white,
+  //         fontWeight: FontWeight.w700));
 
-  static String marketInteligence = '''  * Market Intelligence
-  * Expert Team
-  * Data-Driven Strategies
-  * Guaranteed results
-  * Disruptive technologies
-  * Affordable''';
+  // static String marketInteligence = '''  * Market Intelligence
+  // * Expert Team
+  // * Data-Driven Strategies
+  // * Guaranteed results
+  // * Disruptive technologies
+  // * Affordable''';
 }

@@ -40,7 +40,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
     text: TextSpan(children: [
       const TextSpan(
         text:
-            "Analyze your existing IT infrastructure and fast-track your transition to modernization with our IT Assessment & Upgrade Services ",
+            "Our IT Assessment & Upgrade Services are designed to analyze your existing IT infrastructure and identify areas that require optimization. Our team of experts then creates a customized plan to modernize your system with the latest technology solutions to enhance efficiency, security, and performance. With our services, you can fast-track your transition to a more advanced system without disrupting your daily operations.",
         style: TextStyle(
             letterSpacing: 1,
             wordSpacing: 1,
@@ -75,7 +75,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
     text: TextSpan(children: [
       const TextSpan(
         text:
-            "Reduce IT costs,ensure a secure migration and eliminate system downtime with our Consolidation & Migration Services",
+            "Our Consolidation & Migration Services help you reduce IT costs and improve efficiency by consolidating multiple systems into a unified platform. We ensure a secure migration process that eliminates system downtime and minimizes any disruptions to your business operations. We provide a seamless transition to a more streamlined and cost-effective system, helping you stay ahead of the curve in today's competitive business landscape.",
         style: TextStyle(
             letterSpacing: 1,
             wordSpacing: 1,
@@ -103,7 +103,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
     text: TextSpan(children: [
       const TextSpan(
         text:
-            "Drive business growth and be future-proof with our flexible and scalable individualized IT transformation solutions.",
+            "Our flexible and scalable IT transformation help you drive business growth and future-proof your organization. We collaborate with you to identify areas for improvement and create a roadmap for a successful transformation journey. We help you adopt the latest IT technologies and best practices to improve efficiency, productivity, and customer satisfaction. At Avancer, we ensure that your transformation journey is seamless and hassle-free.",
         style: TextStyle(
             letterSpacing: 1,
             wordSpacing: 1,
@@ -132,7 +132,7 @@ Avancer is an industry leader in providing simple, reliable, and affordable IT i
     text: TextSpan(children: [
       const TextSpan(
         text:
-            "Ensure your projects move forward seamlessly with the expertise and experience of our on-demand engineers.",
+            "Our Engineering on Demand Services provide you with access to experienced and knowledgeable engineers, ensuring your projects move forward seamlessly. We offer a flexible, on-demand model that allows you to scale up or down as per your project requirements. Our engineers are equipped with the latest technology and tools to deliver high-quality solutions that meet your specific needs. ",
         style: TextStyle(
             letterSpacing: 1,
             wordSpacing: 1,
